@@ -70,5 +70,18 @@
     "local_links_valid": 18,
     "shell_examples_parse": 15,
     "shell_wrappers_parse": 8
+  },
+  "checkpoint_release": {
+    "date": "2026-10-19",
+    "release_tag": "v1.0-500step",
+    "release_url": "https://github.com/yqyati/turngpt/releases/tag/v1.0-500step",
+    "models": 5,
+    "archive_assets": 18,
+    "metadata_assets": 5,
+    "all_packaged_file_hashes_match": true,
+    "all_remote_asset_sha256_hashes_match": true,
+    "original_checkpoint_files_unchanged": true,
+    "record": "docs/checkpoint_release.json",
+    "manifest": "docs/checkpoint_manifest.json"
   }
 }

@@ -1,0 +1,188 @@
+{
+  "release_url": "https://github.com/yqyati/turngpt/releases/tag/v1.0-500step",
+  "release_id": 416948481,
+  "tag": "v1.0-500step",
+  "draft": false,
+  "status": "passed",
+  "assets": [
+    {
+      "name": "turngpt-gpt2-500step.tar",
+      "size": 253767680,
+      "digest": "sha256:96a40a50932443c2bf00f1ab1cdab684a91230200dbe79171b1be7fa34f50771",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-gpt2-500step.tar"
+    },
+    {
+      "name": "turngpt-qwen3-0p6b-500step.tar",
+      "size": 1207541760,
+      "digest": "sha256:cbb91fd4a8cc793a7efb4f00780d0f8024c9d540c179bd6a708fcb53f341d939",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-qwen3-0p6b-500step.tar"
+    },
+    {
+      "name": "turngpt-qwen3-1p7b-500step.tar.part001",
+      "size": 1992294400,
+      "digest": "sha256:4c39a7ff166add9801de76b1c61114915f07249ee4103aab05c5151fd193c4f3",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-qwen3-1p7b-500step.tar.part001"
+    },
+    {
+      "name": "turngpt-qwen3-1p7b-500step.tar.part002",
+      "size": 1463756800,
+      "digest": "sha256:8ab22f85b001372cfb39a062e42dca0db3e1aa973d7d2fc4469b7d0457ce31da",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-qwen3-1p7b-500step.tar.part002"
+    },
+    {
+      "name": "turngpt-qwen3-4b-500step.tar.part001",
+      "size": 1992294400,
+      "digest": "sha256:cbb29df370daa696db7b1bb5289efc474ad6b34e4b4afae19d65b49a2a499581",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-qwen3-4b-500step.tar.part001"
+    },
+    {
+      "name": "turngpt-qwen3-4b-500step.tar.part002",
+      "size": 1992294400,
+      "digest": "sha256:51dbbca606419ccf8e5a80ae23c5fcd1812085c43ef48f9b987a3c7489655733",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-qwen3-4b-500step.tar.part002"
+    },
+    {
+      "name": "turngpt-qwen3-4b-500step.tar.part003",
+      "size": 1992294400,
+      "digest": "sha256:95a0358de9ed15ec4d68d99408d7979c0c0e587dc7f8fdc1cb40ad493053c4e5",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-qwen3-4b-500step.tar.part003"
+    },
+    {
+      "name": "turngpt-qwen3-4b-500step.tar.part004",
+      "size": 1992294400,
+      "digest": "sha256:50c66f889983da9ae5280b7962548e246f9f6d360b73e2ddf0c391a293faffb8",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-qwen3-4b-500step.tar.part004"
+    },
+    {
+      "name": "turngpt-qwen3-4b-500step.tar.part005",
+      "size": 90429440,
+      "digest": "sha256:c082b61e2650b680457cf1bceb558156325f5127f5482768c758f0f666d549c8",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-qwen3-4b-500step.tar.part005"
+    },
+    {
+      "name": "turngpt-qwen3-8b-500step.tar.part001",
+      "size": 1992294400,
+      "digest": "sha256:ba80ec00ef43c2816b44cf2d49304f5b5c1cc799676df79bcbf22a42bcd155fe",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-qwen3-8b-500step.tar.part001"
+    },
+    {
+      "name": "turngpt-qwen3-8b-500step.tar.part002",
+      "size": 1992294400,
+      "digest": "sha256:3a0208df06ec9b03eb61b7ba08cf8d2b5e9746d8bd66b1bc1bf6d4e6e5334a6d",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-qwen3-8b-500step.tar.part002"
+    },
+    {
+      "name": "turngpt-qwen3-8b-500step.tar.part003",
+      "size": 1992294400,
+      "digest": "sha256:8ac606bb9ba8642d229e7e5d4b377a92347af28267e699c00f79371d5131cf4b",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-qwen3-8b-500step.tar.part003"
+    },
+    {
+      "name": "turngpt-qwen3-8b-500step.tar.part004",
+      "size": 1992294400,
+      "digest": "sha256:4ad93bfba2d11f90b1f8bf20dab0ddc8f828f16a7d6b5c011ce520fbbc61504b",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-qwen3-8b-500step.tar.part004"
+    },
+    {
+      "name": "turngpt-qwen3-8b-500step.tar.part005",
+      "size": 1992294400,
+      "digest": "sha256:877f8e525b4ec18a67013b09b98583b174e2ec7f44760acff2db4f6682a74619",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-qwen3-8b-500step.tar.part005"
+    },
+    {
+      "name": "turngpt-qwen3-8b-500step.tar.part006",
+      "size": 1992294400,
+      "digest": "sha256:d7bda8adb99c223f5159a472c56edadf68cfc9524b9e4ae43127dfda1e1fd57a",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-qwen3-8b-500step.tar.part006"
+    },
+    {
+      "name": "turngpt-qwen3-8b-500step.tar.part007",
+      "size": 1992294400,
+      "digest": "sha256:d0c625e811bfa17582face593644a3e9bc96ff86aab8b78d4e0ac16ab6b77024",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-qwen3-8b-500step.tar.part007"
+    },
+    {
+      "name": "turngpt-qwen3-8b-500step.tar.part008",
+      "size": 1992294400,
+      "digest": "sha256:51d159d70019c2f8e1712daa53177f121f66eadd6254b55b217f055ba50c0730",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-qwen3-8b-500step.tar.part008"
+    },
+    {
+      "name": "turngpt-qwen3-8b-500step.tar.part009",
+      "size": 454819840,
+      "digest": "sha256:13f739f16040df3bc8b1c00d6f7de8579f32191055b47b684b3acac7bd1e8304",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/turngpt-qwen3-8b-500step.tar.part009"
+    },
+    {
+      "name": "checkpoint_manifest.json",
+      "size": 20729,
+      "digest": "sha256:3753c95bd36f6d2427c6ef522907765cb58d8cbd203750317ea3c3f462294fa2",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/checkpoint_manifest.json"
+    },
+    {
+      "name": "DOWNLOAD.md",
+      "size": 4006,
+      "digest": "sha256:215ac4fedf8d9b553e51a1227a13b07f8c35f9a2a08f92b3ae9e338b748a605c",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/DOWNLOAD.md"
+    },
+    {
+      "name": "LICENSE-GPT2.txt",
+      "size": 1403,
+      "digest": "sha256:0dbeda4bc78823b1d67ec0ee414d8690ee4cad826bc9c147b215adc3af202436",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/LICENSE-GPT2.txt"
+    },
+    {
+      "name": "LICENSE-QWEN3.txt",
+      "size": 11343,
+      "digest": "sha256:832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/LICENSE-QWEN3.txt"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size": 2176,
+      "digest": "sha256:7cec8d46f244c36f21b6727dc625da4c5eb7f224bdb9211344f22f28009dfcb9",
+      "url": "https://github.com/yqyati/turngpt/releases/download/v1.0-500step/SHA256SUMS"
+    }
+  ],
+  "date": "2026-10-19",
+  "source_commit": "a34349278d7c5e0265ce9e9214ef3738748a3899",
+  "local_package_verification": {
+    "status": "passed",
+    "models": [
+      {
+        "model": "gpt2",
+        "files": 13,
+        "parts": 1,
+        "status": "passed"
+      },
+      {
+        "model": "qwen3_0p6b",
+        "files": 15,
+        "parts": 1,
+        "status": "passed"
+      },
+      {
+        "model": "qwen3_1p7b",
+        "files": 15,
+        "parts": 2,
+        "status": "passed"
+      },
+      {
+        "model": "qwen3_4b",
+        "files": 17,
+        "parts": 5,
+        "status": "passed"
+      },
+      {
+        "model": "qwen3_8b",
+        "files": 19,
+        "parts": 9,
+        "status": "passed"
+      }
+    ],
+    "model_config_tokenizer_and_shard_index_checks": "passed",
+    "original_checkpoint_files_unchanged": true,
+    "archive_count": 18
+  },
+  "gpu_experiments_started": false
+}

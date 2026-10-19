@@ -5,3 +5,4 @@ runs/
 *.safetensors
 *.bin
 /README_zh-CN.md
+/checkpoints/

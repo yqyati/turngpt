@@ -942,7 +942,7 @@
   "new_files": [
     {
       "path": ".gitignore",
-      "sha256": "6345a169e31e2b58fdb949797735d91574951c68ab98f35ee5796af5d66e67ee"
+      "sha256": "a5e3b5f43de2eae27d8111791b8819394908b6ec4b82080a3c7da5d1aeec2e28"
     },
     {
       "path": "AGENTS.md",
@@ -950,7 +950,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "472b5d5b0806fb057509681e384a6a656fdbbed9159b1f812761348700de07d0"
+      "sha256": "c2c99098fc2dfaa8785893621d99001ed82cd0623e493434b746ec47900390ae"
     },
     {
       "path": "docs/attribution.md",
@@ -1011,6 +1011,18 @@
     {
       "path": ".gitattributes",
       "sha256": "d1741146b017d6ab8cc7881c3db00848edfa2d078e1c00b05d09e82e7b4c073c"
+    },
+    {
+      "path": "docs/checkpoint_manifest.json",
+      "sha256": "3753c95bd36f6d2427c6ef522907765cb58d8cbd203750317ea3c3f462294fa2"
+    },
+    {
+      "path": "docs/checkpoint_release.json",
+      "sha256": "2d87d72d8fb6c4c05a625750aca0ea5ecade6bdc91efb7b49a4b20e91431ea11"
+    },
+    {
+      "path": "docs/verification.json",
+      "sha256": "92b074efd4128db8c434ef9a6ae936c9dfc436cfb4d10724d9a9003ff5bc5bfa"
     }
   ],
   "local_only_ignored_files": [

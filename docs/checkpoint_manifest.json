@@ -1,0 +1,539 @@
+{
+  "release_tag": "v1.0-500step",
+  "repository": "https://github.com/yqyati/turngpt",
+  "source_commit": "a34349278d7c5e0265ce9e9214ef3738748a3899",
+  "format": "uncompressed tar; archives larger than 1900 MiB are byte-split",
+  "part_limit_bytes": 1992294400,
+  "models": [
+    {
+      "name": "gpt2",
+      "slug": "turngpt-gpt2-500step",
+      "steps": 500,
+      "files": [
+        {
+          "path": "turngpt-gpt2-500step/model/added_tokens.json",
+          "size": 66,
+          "sha256": "53e3ac47b52737c7d15baeb9f20f4cbd12c93132db56d6fa8c50dbcc452abd0f"
+        },
+        {
+          "path": "turngpt-gpt2-500step/model/config.json",
+          "size": 985,
+          "sha256": "94fe37c74537be2a5b4bae321a3247061d85113002cc8f60956e33abbbe16ce4"
+        },
+        {
+          "path": "turngpt-gpt2-500step/model/generation_config.json",
+          "size": 144,
+          "sha256": "ebf1b15f2880e2da8c7f6e59882706d59b674b14851becfbbc02fc22f8618970"
+        },
+        {
+          "path": "turngpt-gpt2-500step/model/merges.txt",
+          "size": 456318,
+          "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5"
+        },
+        {
+          "path": "turngpt-gpt2-500step/model/model.safetensors",
+          "size": 248899264,
+          "sha256": "9db4ee7f0bd7110ed6894d9cb90cd9d70338685123251222445baac20944aafe"
+        },
+        {
+          "path": "turngpt-gpt2-500step/model/special_tokens_map.json",
+          "size": 561,
+          "sha256": "0b8ed125002adc8afaa66011c5723375c7b6a1af7ff2bea38fb538691c318b69"
+        },
+        {
+          "path": "turngpt-gpt2-500step/model/tokenizer.json",
+          "size": 3558232,
+          "sha256": "ceb84f7cf4ced7019ab3f0cd35efbed2b6a0d6d8c4344b2afa75c8409e6c9eea"
+        },
+        {
+          "path": "turngpt-gpt2-500step/model/tokenizer_config.json",
+          "size": 1093,
+          "sha256": "05e6bdd58d5355c7ec10658e9588e32b2f5c68c8d77b2df057606c4d3fac049b"
+        },
+        {
+          "path": "turngpt-gpt2-500step/model/vocab.json",
+          "size": 798156,
+          "sha256": "3ba3c3109ff33976c4bd966589c11ee14fcaa1f4c9e5e154c2ed7f99d80709e7"
+        },
+        {
+          "path": "turngpt-gpt2-500step/results/500step_full_metrics.json",
+          "size": 7078,
+          "sha256": "8e6827bfe565a457cf4a773e9b76eb02257b491e244ffddc6cbe2559006e132c"
+        },
+        {
+          "path": "turngpt-gpt2-500step/results/base_full_metrics.json",
+          "size": 7061,
+          "sha256": "f4a12bf5e918707b69a1936f4d545a521f7e3989398165dc6806467cc836bbdc"
+        },
+        {
+          "path": "turngpt-gpt2-500step/results/train_report.json",
+          "size": 14966,
+          "sha256": "63f9063fadb8b1dc052f78529aea87815f24a0a7469be6594949a02248bebab8"
+        },
+        {
+          "path": "turngpt-gpt2-500step/upstream/README.md",
+          "size": 8092,
+          "sha256": "0fcd631078093c2aa1d93438b898320b8a1167784e2a1ab37b8016e9de8b3c2e"
+        }
+      ],
+      "assets": [
+        {
+          "name": "turngpt-gpt2-500step.tar",
+          "size": 253767680,
+          "sha256": "96a40a50932443c2bf00f1ab1cdab684a91230200dbe79171b1be7fa34f50771"
+        }
+      ]
+    },
+    {
+      "name": "qwen3_0p6b",
+      "slug": "turngpt-qwen3-0p6b-500step",
+      "steps": 500,
+      "files": [
+        {
+          "path": "turngpt-qwen3-0p6b-500step/model/added_tokens.json",
+          "size": 773,
+          "sha256": "31a882827a72653f2a3b00214771930791d8c292952969096b0f8dbf861c5c01"
+        },
+        {
+          "path": "turngpt-qwen3-0p6b-500step/model/chat_template.jinja",
+          "size": 4116,
+          "sha256": "87a2728cb8dc9fe424d624542f6060ec05a1d285ebbec578bb078900e33396b5"
+        },
+        {
+          "path": "turngpt-qwen3-0p6b-500step/model/config.json",
+          "size": 1387,
+          "sha256": "f4daa052e5b38debd6d87393f22179d9d56d2141b546913e2c0240e438ec6e80"
+        },
+        {
+          "path": "turngpt-qwen3-0p6b-500step/model/generation_config.json",
+          "size": 143,
+          "sha256": "fa249a6a55ed62384df612d151179de172a72590a08850a50c8097541fed0678"
+        },
+        {
+          "path": "turngpt-qwen3-0p6b-500step/model/merges.txt",
+          "size": 1671853,
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+        },
+        {
+          "path": "turngpt-qwen3-0p6b-500step/model/model.safetensors",
+          "size": 1191594424,
+          "sha256": "eff948b19e0953823d531b39fbca3ec7cc7d0e1377f7393681436cdb5b5c1b23"
+        },
+        {
+          "path": "turngpt-qwen3-0p6b-500step/model/special_tokens_map.json",
+          "size": 611,
+          "sha256": "94b46ed4ac52fbc8fc644a7c7dc217a683dac89800270175c73e6e7b489b2a96"
+        },
+        {
+          "path": "turngpt-qwen3-0p6b-500step/model/tokenizer.json",
+          "size": 11423209,
+          "sha256": "b6eeb1d6a377001fead5096510de22db513c6884bf22f366e914fff8ee7cd64f"
+        },
+        {
+          "path": "turngpt-qwen3-0p6b-500step/model/tokenizer_config.json",
+          "size": 5675,
+          "sha256": "818d9cc1255c25bce63a70e0ab1f781a10b64ba93193f9256c33b07eea2cd41e"
+        },
+        {
+          "path": "turngpt-qwen3-0p6b-500step/model/vocab.json",
+          "size": 2776833,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        },
+        {
+          "path": "turngpt-qwen3-0p6b-500step/results/500step_full_metrics.json",
+          "size": 6991,
+          "sha256": "13f3dc2d3794cb9efbbe672c92019a6509cf44adb6196c5b86cb163c99e0fa01"
+        },
+        {
+          "path": "turngpt-qwen3-0p6b-500step/results/base_full_metrics.json",
+          "size": 7005,
+          "sha256": "f3fd97ec8dcc9799a60771343a5638c98a184305920835aaa6d1b556af267d35"
+        },
+        {
+          "path": "turngpt-qwen3-0p6b-500step/results/train_report.json",
+          "size": 14951,
+          "sha256": "65ae9791c37f2101b6c08f4b766cf533ead309e7252d2237611a71f5a1cbdad8"
+        },
+        {
+          "path": "turngpt-qwen3-0p6b-500step/upstream/LICENSE",
+          "size": 11343,
+          "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+        },
+        {
+          "path": "turngpt-qwen3-0p6b-500step/upstream/README.md",
+          "size": 2973,
+          "sha256": "910d9be25c648ab1cb5a7b1d20d67ca6d43d43559a705010198886f9af68e8f1"
+        }
+      ],
+      "assets": [
+        {
+          "name": "turngpt-qwen3-0p6b-500step.tar",
+          "size": 1207541760,
+          "sha256": "cbb91fd4a8cc793a7efb4f00780d0f8024c9d540c179bd6a708fcb53f341d939"
+        }
+      ]
+    },
+    {
+      "name": "qwen3_1p7b",
+      "slug": "turngpt-qwen3-1p7b-500step",
+      "steps": 500,
+      "files": [
+        {
+          "path": "turngpt-qwen3-1p7b-500step/model/added_tokens.json",
+          "size": 773,
+          "sha256": "31a882827a72653f2a3b00214771930791d8c292952969096b0f8dbf861c5c01"
+        },
+        {
+          "path": "turngpt-qwen3-1p7b-500step/model/chat_template.jinja",
+          "size": 4116,
+          "sha256": "87a2728cb8dc9fe424d624542f6060ec05a1d285ebbec578bb078900e33396b5"
+        },
+        {
+          "path": "turngpt-qwen3-1p7b-500step/model/config.json",
+          "size": 1387,
+          "sha256": "6d1d8b7339a29ab05978563c917df72b0171f5f337a6b748dcf38486881efe48"
+        },
+        {
+          "path": "turngpt-qwen3-1p7b-500step/model/generation_config.json",
+          "size": 143,
+          "sha256": "fa249a6a55ed62384df612d151179de172a72590a08850a50c8097541fed0678"
+        },
+        {
+          "path": "turngpt-qwen3-1p7b-500step/model/merges.txt",
+          "size": 1671853,
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+        },
+        {
+          "path": "turngpt-qwen3-1p7b-500step/model/model.safetensors",
+          "size": 3440104264,
+          "sha256": "e1fd23ac171b3ca3dd8866cd70b262c6996115ecb5701a06f85494f6f4d41d3c"
+        },
+        {
+          "path": "turngpt-qwen3-1p7b-500step/model/special_tokens_map.json",
+          "size": 611,
+          "sha256": "94b46ed4ac52fbc8fc644a7c7dc217a683dac89800270175c73e6e7b489b2a96"
+        },
+        {
+          "path": "turngpt-qwen3-1p7b-500step/model/tokenizer.json",
+          "size": 11423209,
+          "sha256": "b6eeb1d6a377001fead5096510de22db513c6884bf22f366e914fff8ee7cd64f"
+        },
+        {
+          "path": "turngpt-qwen3-1p7b-500step/model/tokenizer_config.json",
+          "size": 5675,
+          "sha256": "818d9cc1255c25bce63a70e0ab1f781a10b64ba93193f9256c33b07eea2cd41e"
+        },
+        {
+          "path": "turngpt-qwen3-1p7b-500step/model/vocab.json",
+          "size": 2776833,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        },
+        {
+          "path": "turngpt-qwen3-1p7b-500step/results/500step_full_metrics.json",
+          "size": 7003,
+          "sha256": "758f041a49c00e62de0538c2966619fb45fdb8ec3d097f1d460192afc16e7f5d"
+        },
+        {
+          "path": "turngpt-qwen3-1p7b-500step/results/base_full_metrics.json",
+          "size": 6982,
+          "sha256": "b750e6bf902989ea4d01e8c69d63833dfa3989c101c7ece0268fb4ea57022af4"
+        },
+        {
+          "path": "turngpt-qwen3-1p7b-500step/results/train_report.json",
+          "size": 14955,
+          "sha256": "d73730b17076dea1711c668dd27ff5224dec95860b159b395627d7096708aef0"
+        },
+        {
+          "path": "turngpt-qwen3-1p7b-500step/upstream/LICENSE",
+          "size": 11343,
+          "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+        },
+        {
+          "path": "turngpt-qwen3-1p7b-500step/upstream/README.md",
+          "size": 2941,
+          "sha256": "579b9d7052fa567f439114f01feceed2b06f47d830d06c8ac829f389fd2e39a4"
+        }
+      ],
+      "assets": [
+        {
+          "name": "turngpt-qwen3-1p7b-500step.tar.part001",
+          "size": 1992294400,
+          "sha256": "4c39a7ff166add9801de76b1c61114915f07249ee4103aab05c5151fd193c4f3"
+        },
+        {
+          "name": "turngpt-qwen3-1p7b-500step.tar.part002",
+          "size": 1463756800,
+          "sha256": "8ab22f85b001372cfb39a062e42dca0db3e1aa973d7d2fc4469b7d0457ce31da"
+        }
+      ]
+    },
+    {
+      "name": "qwen3_4b",
+      "slug": "turngpt-qwen3-4b-500step",
+      "steps": 500,
+      "files": [
+        {
+          "path": "turngpt-qwen3-4b-500step/model/added_tokens.json",
+          "size": 773,
+          "sha256": "31a882827a72653f2a3b00214771930791d8c292952969096b0f8dbf861c5c01"
+        },
+        {
+          "path": "turngpt-qwen3-4b-500step/model/chat_template.jinja",
+          "size": 4116,
+          "sha256": "87a2728cb8dc9fe424d624542f6060ec05a1d285ebbec578bb078900e33396b5"
+        },
+        {
+          "path": "turngpt-qwen3-4b-500step/model/config.json",
+          "size": 1563,
+          "sha256": "f88638b41615a282c4137f9c4ec6f18697090b9d77938b6956c0ca124987857f"
+        },
+        {
+          "path": "turngpt-qwen3-4b-500step/model/generation_config.json",
+          "size": 143,
+          "sha256": "fa249a6a55ed62384df612d151179de172a72590a08850a50c8097541fed0678"
+        },
+        {
+          "path": "turngpt-qwen3-4b-500step/model/merges.txt",
+          "size": 1671853,
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+        },
+        {
+          "path": "turngpt-qwen3-4b-500step/model/model-00001-of-00002.safetensors",
+          "size": 4965863680,
+          "sha256": "53be15c7239c929edad75f8e776e858b23bf52dd7843c782a73d791a8f49b3e8"
+        },
+        {
+          "path": "turngpt-qwen3-4b-500step/model/model-00002-of-00002.safetensors",
+          "size": 3077766632,
+          "sha256": "9c7f41fdd13e0c0aa6e833f13da08523699c61a2e1d4ca5d2ab399f9ab5845e4"
+        },
+        {
+          "path": "turngpt-qwen3-4b-500step/model/model.safetensors.index.json",
+          "size": 32855,
+          "sha256": "91a7400fb2539ec4484f9f228be7b0f5bfd9a68ed8c233c456ca247bd6eef3ef"
+        },
+        {
+          "path": "turngpt-qwen3-4b-500step/model/special_tokens_map.json",
+          "size": 611,
+          "sha256": "94b46ed4ac52fbc8fc644a7c7dc217a683dac89800270175c73e6e7b489b2a96"
+        },
+        {
+          "path": "turngpt-qwen3-4b-500step/model/tokenizer.json",
+          "size": 11423209,
+          "sha256": "b6eeb1d6a377001fead5096510de22db513c6884bf22f366e914fff8ee7cd64f"
+        },
+        {
+          "path": "turngpt-qwen3-4b-500step/model/tokenizer_config.json",
+          "size": 5675,
+          "sha256": "818d9cc1255c25bce63a70e0ab1f781a10b64ba93193f9256c33b07eea2cd41e"
+        },
+        {
+          "path": "turngpt-qwen3-4b-500step/model/vocab.json",
+          "size": 2776833,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        },
+        {
+          "path": "turngpt-qwen3-4b-500step/results/500step_full_metrics.json",
+          "size": 7006,
+          "sha256": "da4e049e2dff8ca361a78ef43b61d0d3deac43741d0e26da3700bc572db339da"
+        },
+        {
+          "path": "turngpt-qwen3-4b-500step/results/base_full_metrics.json",
+          "size": 6988,
+          "sha256": "f26006b4a189ae9270820526a261d7329450108d70e834660867c076054f12d1"
+        },
+        {
+          "path": "turngpt-qwen3-4b-500step/results/train_report.json",
+          "size": 14968,
+          "sha256": "c347378b01c9c058253df9c401fbb60321998afb88f8c174a53abd9477d8e33e"
+        },
+        {
+          "path": "turngpt-qwen3-4b-500step/upstream/LICENSE",
+          "size": 11343,
+          "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+        },
+        {
+          "path": "turngpt-qwen3-4b-500step/upstream/README.md",
+          "size": 2937,
+          "sha256": "9fd20ab531a1dc75ae18fcde658dd69d04173fdb93311091c38a7098e3d4b4a1"
+        }
+      ],
+      "assets": [
+        {
+          "name": "turngpt-qwen3-4b-500step.tar.part001",
+          "size": 1992294400,
+          "sha256": "cbb29df370daa696db7b1bb5289efc474ad6b34e4b4afae19d65b49a2a499581"
+        },
+        {
+          "name": "turngpt-qwen3-4b-500step.tar.part002",
+          "size": 1992294400,
+          "sha256": "51dbbca606419ccf8e5a80ae23c5fcd1812085c43ef48f9b987a3c7489655733"
+        },
+        {
+          "name": "turngpt-qwen3-4b-500step.tar.part003",
+          "size": 1992294400,
+          "sha256": "95a0358de9ed15ec4d68d99408d7979c0c0e587dc7f8fdc1cb40ad493053c4e5"
+        },
+        {
+          "name": "turngpt-qwen3-4b-500step.tar.part004",
+          "size": 1992294400,
+          "sha256": "50c66f889983da9ae5280b7962548e246f9f6d360b73e2ddf0c391a293faffb8"
+        },
+        {
+          "name": "turngpt-qwen3-4b-500step.tar.part005",
+          "size": 90429440,
+          "sha256": "c082b61e2650b680457cf1bceb558156325f5127f5482768c758f0f666d549c8"
+        }
+      ]
+    },
+    {
+      "name": "qwen3_8b",
+      "slug": "turngpt-qwen3-8b-500step",
+      "steps": 500,
+      "files": [
+        {
+          "path": "turngpt-qwen3-8b-500step/model/added_tokens.json",
+          "size": 773,
+          "sha256": "31a882827a72653f2a3b00214771930791d8c292952969096b0f8dbf861c5c01"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/model/chat_template.jinja",
+          "size": 4116,
+          "sha256": "87a2728cb8dc9fe424d624542f6060ec05a1d285ebbec578bb078900e33396b5"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/model/config.json",
+          "size": 1565,
+          "sha256": "692f93df1fe9e668ad19c018f72c69af8c5ee0fa45b00fb79cfab7649b48ba90"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/model/generation_config.json",
+          "size": 143,
+          "sha256": "fa249a6a55ed62384df612d151179de172a72590a08850a50c8097541fed0678"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/model/merges.txt",
+          "size": 1671853,
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/model/model-00001-of-00004.safetensors",
+          "size": 4900095008,
+          "sha256": "9dc093f356f2521916a6c9d488a683152b8a2c780a6d73f419262f11c55c01cf"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/model/model-00002-of-00004.safetensors",
+          "size": 4915960368,
+          "sha256": "8c3f90956db821c08f7757f913813f3069dfeb04b622b8ba53e9ea6eb11b9eb1"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/model/model-00003-of-00004.safetensors",
+          "size": 4983068496,
+          "sha256": "530c11bada71e4d207c8999a570af42d3ae2497dd4726fc1ae805b30f1b8c9aa"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/model/model-00004-of-00004.safetensors",
+          "size": 1578067576,
+          "sha256": "defb03aac721ad10d838027cde58b219c11c1662c58629f280002218df2a8fe3"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/model/model.safetensors.index.json",
+          "size": 32914,
+          "sha256": "ced23bc69d76ff20f51b79d51fe22ed68a717891d55d54ed71b14029156ee466"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/model/special_tokens_map.json",
+          "size": 611,
+          "sha256": "94b46ed4ac52fbc8fc644a7c7dc217a683dac89800270175c73e6e7b489b2a96"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/model/tokenizer.json",
+          "size": 11423209,
+          "sha256": "b6eeb1d6a377001fead5096510de22db513c6884bf22f366e914fff8ee7cd64f"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/model/tokenizer_config.json",
+          "size": 5675,
+          "sha256": "818d9cc1255c25bce63a70e0ab1f781a10b64ba93193f9256c33b07eea2cd41e"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/model/vocab.json",
+          "size": 2776833,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/results/500step_full_metrics.json",
+          "size": 6999,
+          "sha256": "c4aecc943226edf99f9c5bd2145d7cf8d4d8da4ad92a88c2eb4561debc8babd7"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/results/base_full_metrics.json",
+          "size": 6978,
+          "sha256": "b6bd2e9e2e69b91802ada2706aad23a4c78cdca6648645a67487f9ef400e7292"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/results/train_report.json",
+          "size": 14968,
+          "sha256": "2a8ead8d38f1ff0946c235d8dc4f8d6b9706e80fd4776dc2ce8cf9e4d3b1f363"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/upstream/README.md",
+          "size": 2938,
+          "sha256": "0eb9f991baa4f92c9ef708d1e9c7a01ae5b19d05516d38f8833549aa8b06a07e"
+        },
+        {
+          "path": "turngpt-qwen3-8b-500step/upstream/LICENSE",
+          "size": 11343,
+          "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+        }
+      ],
+      "assets": [
+        {
+          "name": "turngpt-qwen3-8b-500step.tar.part001",
+          "size": 1992294400,
+          "sha256": "ba80ec00ef43c2816b44cf2d49304f5b5c1cc799676df79bcbf22a42bcd155fe"
+        },
+        {
+          "name": "turngpt-qwen3-8b-500step.tar.part002",
+          "size": 1992294400,
+          "sha256": "3a0208df06ec9b03eb61b7ba08cf8d2b5e9746d8bd66b1bc1bf6d4e6e5334a6d"
+        },
+        {
+          "name": "turngpt-qwen3-8b-500step.tar.part003",
+          "size": 1992294400,
+          "sha256": "8ac606bb9ba8642d229e7e5d4b377a92347af28267e699c00f79371d5131cf4b"
+        },
+        {
+          "name": "turngpt-qwen3-8b-500step.tar.part004",
+          "size": 1992294400,
+          "sha256": "4ad93bfba2d11f90b1f8bf20dab0ddc8f828f16a7d6b5c011ce520fbbc61504b"
+        },
+        {
+          "name": "turngpt-qwen3-8b-500step.tar.part005",
+          "size": 1992294400,
+          "sha256": "877f8e525b4ec18a67013b09b98583b174e2ec7f44760acff2db4f6682a74619"
+        },
+        {
+          "name": "turngpt-qwen3-8b-500step.tar.part006",
+          "size": 1992294400,
+          "sha256": "d7bda8adb99c223f5159a472c56edadf68cfc9524b9e4ae43127dfda1e1fd57a"
+        },
+        {
+          "name": "turngpt-qwen3-8b-500step.tar.part007",
+          "size": 1992294400,
+          "sha256": "d0c625e811bfa17582face593644a3e9bc96ff86aab8b78d4e0ac16ab6b77024"
+        },
+        {
+          "name": "turngpt-qwen3-8b-500step.tar.part008",
+          "size": 1992294400,
+          "sha256": "51d159d70019c2f8e1712daa53177f121f66eadd6254b55b217f055ba50c0730"
+        },
+        {
+          "name": "turngpt-qwen3-8b-500step.tar.part009",
+          "size": 454819840,
+          "sha256": "13f739f16040df3bc8b1c00d6f7de8579f32191055b47b684b3acac7bd1e8304"
+        }
+      ]
+    }
+  ]
+}

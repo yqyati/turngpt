@@ -4,7 +4,7 @@ This graduation project adapts text-based TurnGPT turn-boundary prediction to Qw
 
 This directory is the curated submission package: it contains the data, preprocessing, training, evaluation, CPU checks, and saved main results. It is an independent copy of the relevant files from the original working project. The original `workspace/kth` directory is unchanged.
 
-**Model weights are intentionally excluded.** Supply a local Base-model or checkpoint path when running training or inference. Data preparation needs only tokenizer files. No code or data is loaded from the old working directory; old paths inside preserved experimental JSONs are historical metadata.
+The five trained **500-step checkpoints are available separately as [GitHub Release assets](https://github.com/yqyati/turngpt/releases/tag/v1.0-500step)**. Model weights are excluded from the Git checkout. Supply a local Base-model or downloaded checkpoint path when running training or inference. Data preparation needs only tokenizer files. No code or data is loaded from the old working directory; old paths inside preserved experimental JSONs are historical metadata.
 
 The project builds on TurnGPT's task formulation and the authors' later simplified implementation, adapting the approach to Qwen3 and a common experimental framework for model comparison. Section 8 describes the methodological relationship and the evaluation settings used in this study.
 
@@ -260,6 +260,30 @@ git lfs pull
 ```
 
 The data files occupy approximately 1.1 GiB. `git lfs pull` ensures that the actual datasets are downloaded rather than only their pointer files. Model weights are supplied separately as described below.
+
+### 6.0.1 Download the trained checkpoints
+
+The [v1.0-500step release](https://github.com/yqyati/turngpt/releases/tag/v1.0-500step) contains the exact seed-1, 500-update checkpoints used in Section 7: GPT-2 small and Qwen3-0.6B/1.7B/4B/8B. Each model package includes its weights, configuration, tokenizer, training report, full evaluation results, and upstream model documentation. The five checkpoints occupy approximately 27.35 GiB in total. Optimizer state is not included.
+
+GPT-2 and Qwen3-0.6B use a single `.tar` asset each. Larger archives are split into numbered parts of at most 1,900 MiB to fit GitHub's per-asset limit. Download every part for a selected model, verify its SHA-256 checksums, and concatenate the parts in numerical order before extraction. The release includes `SHA256SUMS`, `checkpoint_manifest.json`, upstream license texts, and [DOWNLOAD.md](https://github.com/yqyati/turngpt/releases/download/v1.0-500step/DOWNLOAD.md) with full instructions.
+
+For example, using the GitHub CLI from the repository root:
+
+```bash
+gh release download v1.0-500step --repo yqyati/turngpt \
+  --dir checkpoints/downloads \
+  --pattern 'turngpt-qwen3-1p7b-500step.tar.part*' \
+  --pattern 'SHA256SUMS' --pattern 'checkpoint_manifest.json' --pattern 'DOWNLOAD.md' \
+  --pattern 'LICENSE-QWEN3.txt'
+cd checkpoints/downloads
+sha256sum --check --ignore-missing SHA256SUMS
+mkdir -p ../extracted
+cat turngpt-qwen3-1p7b-500step.tar.part* | tar -xf - -C ../extracted
+cd ../..
+TG_CHECKPOINT="$PWD/checkpoints/extracted/turngpt-qwen3-1p7b-500step/model"
+```
+
+For a selective download, confirm that every asset for that model listed in `checkpoint_manifest.json` is present; `--ignore-missing` skips other models' files. Pass the extracted `model/` path to the evaluation and latency commands below. The project code implements the speaker-conditioned TurnGPT forward pass used for these checkpoints.
 
 ### 6.1 Set up the runtime
 
