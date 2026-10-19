@@ -1,0 +1,47 @@
+{
+  "status": "ok",
+  "scope": "metawoz",
+  "raw_sha256": {
+    "train": "2a2ae3b25760aa2725e70bc6480562fa5d720c9689a508d28417631496d6764f",
+    "test": "6722d1d9ec05334dd801972767ae3bdefcd15f71bf73fea1d098f214a96a7c6c"
+  },
+  "settings": {
+    "max_length": 256,
+    "keep_length": 64,
+    "overlap_length": 10
+  },
+  "special_token_ids": {
+    "ts": 50257,
+    "speaker1": 50258,
+    "speaker2": 50259
+  },
+  "splits": {
+    "train": {
+      "source_dialogues": 34095,
+      "filtered_dialogues": 57,
+      "accepted_dialogues": 34038,
+      "turns": 388185,
+      "tokens": 3440866,
+      "ts_tokens": 388185,
+      "windows": 31846
+    },
+    "validation": {
+      "source_dialogues": 3789,
+      "filtered_dialogues": 6,
+      "accepted_dialogues": 3783,
+      "turns": 43092,
+      "tokens": 380695,
+      "ts_tokens": 43092,
+      "windows": 3520
+    },
+    "test": {
+      "source_dialogues": 2319,
+      "filtered_dialogues": 1,
+      "accepted_dialogues": 2318,
+      "turns": 26188,
+      "tokens": 248450,
+      "ts_tokens": 26188,
+      "windows": 2202
+    }
+  }
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+runs/
+*.safetensors
+*.bin
+/README_zh-CN.md

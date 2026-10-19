@@ -1,0 +1,4 @@
+# Install a CUDA-compatible PyTorch build for your machine first.
+# The recorded experiments used torch 2.8.0+cu128 and transformers 4.56.2.
+torch==2.8.0
+transformers==4.56.2

@@ -1,0 +1,46 @@
+{
+  "status": "ok",
+  "scope": "taskmaster1_one_person_dialogs",
+  "settings": {
+    "max_length": 256,
+    "keep_length": 64,
+    "overlap_length": 10
+  },
+  "special_token_ids": {
+    "ts": 151669,
+    "speaker1": 151670,
+    "speaker2": 151671
+  },
+  "splits": {
+    "train": {
+      "source_dialogues": 6168,
+      "missing_dialogues": 0,
+      "accepted_dialogues": 6165,
+      "filtered_dialogues": 3,
+      "turns": 135567,
+      "tokens": 1469744,
+      "ts_tokens": 135567,
+      "windows": 7156
+    },
+    "validation": {
+      "source_dialogues": 770,
+      "missing_dialogues": 0,
+      "accepted_dialogues": 769,
+      "filtered_dialogues": 1,
+      "turns": 16877,
+      "tokens": 183003,
+      "ts_tokens": 16877,
+      "windows": 886
+    },
+    "test": {
+      "source_dialogues": 770,
+      "missing_dialogues": 0,
+      "accepted_dialogues": 769,
+      "filtered_dialogues": 1,
+      "turns": 16894,
+      "tokens": 183488,
+      "ts_tokens": 16894,
+      "windows": 883
+    }
+  }
+}

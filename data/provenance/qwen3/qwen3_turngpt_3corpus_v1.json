@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "scope": "three_corpus_written_subset",
+  "reference": "TurnGPT DialogTextDM 256/64/10 defaults and SpokenDialogTokenizer",
+  "model": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/model/Qwen3-0.6B-Base",
+  "output_dir": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/qwen3_turngpt_3corpus_v1",
+  "settings": {
+    "max_length": 256,
+    "keep_length": 64,
+    "overlap_length": 10,
+    "limit_dialogues_per_split": null
+  },
+  "special_token_ids": {
+    "ts": 151669,
+    "speaker1": 151670,
+    "speaker2": 151671
+  },
+  "raw_sha256": {
+    "data/raw/dailydialog/train.zip": "c5179ab5a9a86a77b9d29114087c6b82cc4cb366abea25a43a0c24be761133f7",
+    "data/raw/personachat_parlai/personachat/train_both_original.txt": "7ab59d51f512ada25b90046359e8f07a1d692e5bc74e95ce59c2d71d86ecbe7e",
+    "data/raw/dailydialog/validation.zip": "1dbcb00a0b4fe709788ce6604b561ba76557c88fe41f049d7899287838f0ec6a",
+    "data/raw/personachat_parlai/personachat/valid_both_original.txt": "ff914be56584e7ebcbc52f16f7c192ab8e415a4eace7420f0c200fdd10127eb2",
+    "data/raw/dailydialog/test.zip": "cfffc0bab93a3697c2562a9ee35c4533f0de2a93e86a4e4d3ea45cbde4bea00f",
+    "data/raw/personachat_parlai/personachat/test_both_original.txt": "b99a51c2048b04c8d571dedcaa2952c819d601557c0be6aaf49339d3b6f1acbc",
+    "data/raw/multiwoz21/MultiWOZ_2.1.zip": "8db3f6afe591383b8523b271f07727693e73012ecce47f3ac7987191e09b7523"
+  },
+  "splits": {
+    "train": {
+      "daily_dialog": {
+        "source_dialogues": 11118,
+        "selected_dialogues": 11118,
+        "accepted_dialogues": 11117,
+        "turns": 87160,
+        "tokens": 1158748,
+        "ts_tokens": 87160,
+        "windows": 7531,
+        "filtered_dialogues": 1
+      },
+      "personachat": {
+        "source_dialogues": 8939,
+        "selected_dialogues": 8939,
+        "accepted_dialogues": 8938,
+        "turns": 131422,
+        "tokens": 1504532,
+        "ts_tokens": 131422,
+        "windows": 8956,
+        "filtered_dialogues": 1
+      },
+      "multiwoz21": {
+        "source_dialogues": 8438,
+        "selected_dialogues": 8438,
+        "accepted_dialogues": 8438,
+        "turns": 113556,
+        "tokens": 1909049,
+        "ts_tokens": 113556,
+        "windows": 10052
+      }
+    },
+    "validation": {
+      "daily_dialog": {
+        "source_dialogues": 1000,
+        "selected_dialogues": 1000,
+        "accepted_dialogues": 1000,
+        "turns": 8069,
+        "tokens": 106680,
+        "ts_tokens": 8069,
+        "windows": 721
+      },
+      "personachat": {
+        "source_dialogues": 1000,
+        "selected_dialogues": 1000,
+        "accepted_dialogues": 1000,
+        "turns": 15602,
+        "tokens": 182108,
+        "ts_tokens": 15602,
+        "windows": 1000
+      },
+      "multiwoz21": {
+        "source_dialogues": 1000,
+        "selected_dialogues": 1000,
+        "accepted_dialogues": 1000,
+        "turns": 14748,
+        "tokens": 254408,
+        "ts_tokens": 14748,
+        "windows": 1253
+      }
+    },
+    "test": {
+      "daily_dialog": {
+        "source_dialogues": 1000,
+        "selected_dialogues": 1000,
+        "accepted_dialogues": 1000,
+        "turns": 7740,
+        "tokens": 104155,
+        "ts_tokens": 7740,
+        "windows": 679
+      },
+      "personachat": {
+        "source_dialogues": 968,
+        "selected_dialogues": 968,
+        "accepted_dialogues": 968,
+        "turns": 15024,
+        "tokens": 173466,
+        "ts_tokens": 15024,
+        "windows": 969
+      },
+      "multiwoz21": {
+        "source_dialogues": 1000,
+        "selected_dialogues": 1000,
+        "accepted_dialogues": 1000,
+        "turns": 14744,
+        "tokens": 253795,
+        "ts_tokens": 14744,
+        "windows": 1234
+      }
+    }
+  }
+}

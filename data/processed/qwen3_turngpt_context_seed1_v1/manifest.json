@@ -1,0 +1,383 @@
+{
+  "status": "ok",
+  "schema_version": 1,
+  "experiment": "matched_context_next_token",
+  "source_data": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/qwen3_turngpt_verified_8dataset_v2",
+  "source_manifest_sha256": "b28fc148c1fccdf488d3575bc36b903327e0ee9eb292ee61db5da4616df685c5",
+  "source_split_sha256": {
+    "validation": "553807dc68b70b9ac6579f1fc6f2f251bcddcc1385129572e38cac96ea096f0c",
+    "test": "c3224ddf47e9b95e1159ea20ee6a66d68d760c61752e66ad69401229f6e8cc15"
+  },
+  "context_lengths": [
+    128,
+    256,
+    512
+  ],
+  "seed": 1,
+  "targets_per_corpus": 4096,
+  "long_targets_per_corpus": 2048,
+  "latency_per_corpus": 32,
+  "special_token_ids": {
+    "ts": 151669,
+    "speaker1": 151670,
+    "speaker2": 151671
+  },
+  "sampling": "uniform unique retained next-token positions per corpus, independent of labels",
+  "history": "verified contiguous cached prefixes only; discarded tails are excluded",
+  "splits": {
+    "validation": {
+      "daily_dialog": {
+        "retained_dialogues": 706,
+        "eligible_primary_targets": 93116,
+        "eligible_history_gt256_targets": 1656,
+        "primary": {
+          "targets": 4096,
+          "positives": 288,
+          "history_gt128": 703,
+          "history_gt256": 63,
+          "history_ge512": 3
+        },
+        "history_gt256": {
+          "targets": 0,
+          "positives": 0,
+          "history_gt128": 0,
+          "history_gt256": 0,
+          "history_ge512": 0
+        }
+      },
+      "personachat": {
+        "retained_dialogues": 1000,
+        "eligible_primary_targets": 181034,
+        "eligible_history_gt256_targets": 0,
+        "primary": {
+          "targets": 4096,
+          "positives": 361,
+          "history_gt128": 1189,
+          "history_gt256": 0,
+          "history_ge512": 0
+        },
+        "history_gt256": {
+          "targets": 0,
+          "positives": 0,
+          "history_gt128": 0,
+          "history_gt256": 0,
+          "history_ge512": 0
+        }
+      },
+      "multiwoz21": {
+        "retained_dialogues": 997,
+        "eligible_primary_targets": 246869,
+        "eligible_history_gt256_targets": 25641,
+        "primary": {
+          "targets": 4096,
+          "positives": 261,
+          "history_gt128": 1917,
+          "history_gt256": 436,
+          "history_ge512": 7
+        },
+        "history_gt256": {
+          "targets": 0,
+          "positives": 0,
+          "history_gt128": 0,
+          "history_gt256": 0,
+          "history_ge512": 0
+        }
+      },
+      "ccpe": {
+        "retained_dialogues": 18,
+        "eligible_primary_targets": 5293,
+        "eligible_history_gt256_targets": 1004,
+        "primary": {
+          "targets": 4096,
+          "positives": 281,
+          "history_gt128": 2311,
+          "history_gt256": 784,
+          "history_ge512": 0
+        },
+        "history_gt256": {
+          "targets": 0,
+          "positives": 0,
+          "history_gt128": 0,
+          "history_gt256": 0,
+          "history_ge512": 0
+        }
+      },
+      "taskmaster1": {
+        "retained_dialogues": 769,
+        "eligible_primary_targets": 178810,
+        "eligible_history_gt256_targets": 13303,
+        "primary": {
+          "targets": 4096,
+          "positives": 367,
+          "history_gt128": 1835,
+          "history_gt256": 312,
+          "history_ge512": 0
+        },
+        "history_gt256": {
+          "targets": 0,
+          "positives": 0,
+          "history_gt128": 0,
+          "history_gt256": 0,
+          "history_ge512": 0
+        }
+      },
+      "taskmaster2": {
+        "retained_dialogues": 338,
+        "eligible_primary_targets": 67566,
+        "eligible_history_gt256_targets": 5932,
+        "primary": {
+          "targets": 4096,
+          "positives": 340,
+          "history_gt128": 1588,
+          "history_gt256": 383,
+          "history_ge512": 5
+        },
+        "history_gt256": {
+          "targets": 0,
+          "positives": 0,
+          "history_gt128": 0,
+          "history_gt256": 0,
+          "history_ge512": 0
+        }
+      },
+      "taskmaster3": {
+        "retained_dialogues": 1188,
+        "eligible_primary_targets": 314992,
+        "eligible_history_gt256_targets": 38803,
+        "primary": {
+          "targets": 4096,
+          "positives": 278,
+          "history_gt128": 2134,
+          "history_gt256": 532,
+          "history_ge512": 18
+        },
+        "history_gt256": {
+          "targets": 0,
+          "positives": 0,
+          "history_gt128": 0,
+          "history_gt256": 0,
+          "history_ge512": 0
+        }
+      },
+      "metawoz": {
+        "retained_dialogues": 3550,
+        "eligible_primary_targets": 372635,
+        "eligible_history_gt256_targets": 499,
+        "primary": {
+          "targets": 4096,
+          "positives": 431,
+          "history_gt128": 168,
+          "history_gt256": 9,
+          "history_ge512": 0
+        },
+        "history_gt256": {
+          "targets": 0,
+          "positives": 0,
+          "history_gt128": 0,
+          "history_gt256": 0,
+          "history_ge512": 0
+        }
+      }
+    },
+    "test": {
+      "daily_dialog": {
+        "retained_dialogues": 667,
+        "eligible_primary_targets": 89614,
+        "eligible_history_gt256_targets": 1392,
+        "primary": {
+          "targets": 4096,
+          "positives": 295,
+          "history_gt128": 824,
+          "history_gt256": 72,
+          "history_ge512": 0
+        },
+        "history_gt256": {
+          "targets": 1392,
+          "positives": 67,
+          "history_gt128": 1392,
+          "history_gt256": 1392,
+          "history_ge512": 0
+        },
+        "latency": {
+          "eligible_targets": 0,
+          "sampled_targets": 0
+        }
+      },
+      "personachat": {
+        "retained_dialogues": 968,
+        "eligible_primary_targets": 172477,
+        "eligible_history_gt256_targets": 62,
+        "primary": {
+          "targets": 4096,
+          "positives": 356,
+          "history_gt128": 1163,
+          "history_gt256": 2,
+          "history_ge512": 0
+        },
+        "history_gt256": {
+          "targets": 62,
+          "positives": 7,
+          "history_gt128": 62,
+          "history_gt256": 62,
+          "history_ge512": 0
+        },
+        "latency": {
+          "eligible_targets": 0,
+          "sampled_targets": 0
+        }
+      },
+      "multiwoz21": {
+        "retained_dialogues": 997,
+        "eligible_primary_targets": 245942,
+        "eligible_history_gt256_targets": 26555,
+        "primary": {
+          "targets": 4096,
+          "positives": 221,
+          "history_gt128": 2002,
+          "history_gt256": 437,
+          "history_ge512": 0
+        },
+        "history_gt256": {
+          "targets": 2048,
+          "positives": 129,
+          "history_gt128": 2048,
+          "history_gt256": 2048,
+          "history_ge512": 8
+        },
+        "latency": {
+          "eligible_targets": 102,
+          "sampled_targets": 32
+        }
+      },
+      "ccpe": {
+        "retained_dialogues": 23,
+        "eligible_primary_targets": 8020,
+        "eligible_history_gt256_targets": 2623,
+        "primary": {
+          "targets": 4096,
+          "positives": 199,
+          "history_gt128": 2596,
+          "history_gt256": 1358,
+          "history_ge512": 266
+        },
+        "history_gt256": {
+          "targets": 2048,
+          "positives": 71,
+          "history_gt128": 2048,
+          "history_gt256": 2048,
+          "history_ge512": 414
+        },
+        "latency": {
+          "eligible_targets": 524,
+          "sampled_targets": 32
+        }
+      },
+      "taskmaster1": {
+        "retained_dialogues": 769,
+        "eligible_primary_targets": 178650,
+        "eligible_history_gt256_targets": 13072,
+        "primary": {
+          "targets": 4096,
+          "positives": 408,
+          "history_gt128": 1869,
+          "history_gt256": 282,
+          "history_ge512": 1
+        },
+        "history_gt256": {
+          "targets": 2048,
+          "positives": 146,
+          "history_gt128": 2048,
+          "history_gt256": 2048,
+          "history_ge512": 8
+        },
+        "latency": {
+          "eligible_targets": 63,
+          "sampled_targets": 32
+        }
+      },
+      "taskmaster2": {
+        "retained_dialogues": 338,
+        "eligible_primary_targets": 67585,
+        "eligible_history_gt256_targets": 4434,
+        "primary": {
+          "targets": 4096,
+          "positives": 362,
+          "history_gt128": 1579,
+          "history_gt256": 236,
+          "history_ge512": 11
+        },
+        "history_gt256": {
+          "targets": 2048,
+          "positives": 161,
+          "history_gt128": 2048,
+          "history_gt256": 2048,
+          "history_ge512": 115
+        },
+        "latency": {
+          "eligible_targets": 236,
+          "sampled_targets": 32
+        }
+      },
+      "taskmaster3": {
+        "retained_dialogues": 1187,
+        "eligible_primary_targets": 320116,
+        "eligible_history_gt256_targets": 44006,
+        "primary": {
+          "targets": 4096,
+          "positives": 311,
+          "history_gt128": 2145,
+          "history_gt256": 562,
+          "history_ge512": 13
+        },
+        "history_gt256": {
+          "targets": 2048,
+          "positives": 129,
+          "history_gt128": 2048,
+          "history_gt256": 2048,
+          "history_ge512": 55
+        },
+        "latency": {
+          "eligible_targets": 1168,
+          "sampled_targets": 32
+        }
+      },
+      "metawoz": {
+        "retained_dialogues": 2200,
+        "eligible_primary_targets": 242075,
+        "eligible_history_gt256_targets": 0,
+        "primary": {
+          "targets": 4096,
+          "positives": 401,
+          "history_gt128": 231,
+          "history_gt256": 0,
+          "history_ge512": 0
+        },
+        "history_gt256": {
+          "targets": 0,
+          "positives": 0,
+          "history_gt128": 0,
+          "history_gt256": 0,
+          "history_ge512": 0
+        },
+        "latency": {
+          "eligible_targets": 0,
+          "sampled_targets": 0
+        }
+      }
+    }
+  },
+  "files": {
+    "validation.jsonl": {
+      "sha256": "ca0e609505f4a51a8259f53b1445eca015f0e75e4b64daedc476072319d9ca36",
+      "rows": 32768
+    },
+    "test.jsonl": {
+      "sha256": "c603fb445e88f554047a16228cd07188a51af7e114376ee0264d1d3ad225d275",
+      "rows": 43081
+    },
+    "latency.jsonl": {
+      "sha256": "c35d89ce4b7f90fec61bb529cff810f1903e7aceb26030f8ef7e00dbb6af44b9",
+      "rows": 160
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "scope": "ccpe_single_corpus",
+  "source": "google-research-datasets/ccpe author release",
+  "raw_sha256": "4ff051ea7ea60cf0f480c911c7e2cfed56434e2e2c9ea8965ac5e26365773f0a",
+  "raw_path": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/raw/ccpe/data.json",
+  "seed": 1,
+  "split_rule": "sha256(ccpe:{seed}:{source_index}) mod 100: 0-89 train, 90-94 validation, 95-99 test",
+  "settings": {
+    "max_length": 256,
+    "keep_length": 64,
+    "overlap_length": 10
+  },
+  "special_token_ids": {
+    "ts": 151669,
+    "speaker1": 151670,
+    "speaker2": 151671
+  },
+  "splits": {
+    "train": {
+      "source_dialogues": 461,
+      "accepted_dialogues": 461,
+      "turns": 9811,
+      "tokens": 160952,
+      "ts_tokens": 9811,
+      "windows": 752
+    },
+    "validation": {
+      "source_dialogues": 18,
+      "accepted_dialogues": 18,
+      "turns": 381,
+      "tokens": 5441,
+      "ts_tokens": 381,
+      "windows": 26
+    },
+    "test": {
+      "source_dialogues": 23,
+      "accepted_dialogues": 23,
+      "turns": 405,
+      "tokens": 8173,
+      "ts_tokens": 405,
+      "windows": 39
+    }
+  }
+}

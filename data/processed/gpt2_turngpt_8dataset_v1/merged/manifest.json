@@ -1,0 +1,221 @@
+{
+  "status": "ok",
+  "scope": "three_corpus_written_subset",
+  "dataset_scope": "merged_verified_turngpt",
+  "datasets": [
+    "daily_dialog",
+    "personachat",
+    "multiwoz21",
+    "ccpe",
+    "taskmaster1",
+    "taskmaster2",
+    "taskmaster3",
+    "metawoz"
+  ],
+  "sources": {
+    "daily_dialog": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/gpt2_turngpt_8dataset_v1/sources/three_corpus",
+    "personachat": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/gpt2_turngpt_8dataset_v1/sources/three_corpus",
+    "multiwoz21": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/gpt2_turngpt_8dataset_v1/sources/three_corpus",
+    "ccpe": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/gpt2_turngpt_8dataset_v1/sources/ccpe",
+    "taskmaster1": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/gpt2_turngpt_8dataset_v1/sources/taskmaster1",
+    "taskmaster2": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/gpt2_turngpt_8dataset_v1/sources/taskmaster2_3",
+    "taskmaster3": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/gpt2_turngpt_8dataset_v1/sources/taskmaster2_3",
+    "metawoz": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/gpt2_turngpt_8dataset_v1/sources/metawoz"
+  },
+  "source_manifests": {
+    "daily_dialog": {
+      "path": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/gpt2_turngpt_8dataset_v1/sources/three_corpus/manifest.json",
+      "sha256": "b188d81082aede5356e12a53a8eba3627d238afc1c1c89005b5f65faad88f7ec"
+    },
+    "personachat": {
+      "path": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/gpt2_turngpt_8dataset_v1/sources/three_corpus/manifest.json",
+      "sha256": "b188d81082aede5356e12a53a8eba3627d238afc1c1c89005b5f65faad88f7ec"
+    },
+    "multiwoz21": {
+      "path": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/gpt2_turngpt_8dataset_v1/sources/three_corpus/manifest.json",
+      "sha256": "b188d81082aede5356e12a53a8eba3627d238afc1c1c89005b5f65faad88f7ec"
+    },
+    "ccpe": {
+      "path": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/gpt2_turngpt_8dataset_v1/sources/ccpe/manifest.json",
+      "sha256": "95a5e06b942bcb4d7a215838b9fda6fa977e333e135048241a5cd6ab0fff6327"
+    },
+    "taskmaster1": {
+      "path": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/gpt2_turngpt_8dataset_v1/sources/taskmaster1/manifest.json",
+      "sha256": "ace1f03422fa93ff3ecf2c4174cdac07a0a72a6a1fc788878d55904a1df98ac9"
+    },
+    "taskmaster2": {
+      "path": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/gpt2_turngpt_8dataset_v1/sources/taskmaster2_3/manifest.json",
+      "sha256": "6fcd54cc4be6e0ac5e3d2a9fd3f3f3c9ca5ed0142f36726bac0fade935ccbb2e"
+    },
+    "taskmaster3": {
+      "path": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/gpt2_turngpt_8dataset_v1/sources/taskmaster2_3/manifest.json",
+      "sha256": "6fcd54cc4be6e0ac5e3d2a9fd3f3f3c9ca5ed0142f36726bac0fade935ccbb2e"
+    },
+    "metawoz": {
+      "path": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/gpt2_turngpt_8dataset_v1/sources/metawoz/manifest.json",
+      "sha256": "ce5b6ba614c04989790b1fea44b932f451387b33dbfbb273eedaa7e57c90a002"
+    }
+  },
+  "splits": {
+    "train": {
+      "daily_dialog": {
+        "windows": 7579,
+        "tokens": 1011474,
+        "ts_tokens": 70529
+      },
+      "personachat": {
+        "windows": 8955,
+        "tokens": 1506761,
+        "ts_tokens": 131374
+      },
+      "multiwoz21": {
+        "windows": 9477,
+        "tokens": 1757034,
+        "ts_tokens": 109215
+      },
+      "ccpe": {
+        "windows": 749,
+        "tokens": 160806,
+        "ts_tokens": 9676
+      },
+      "taskmaster1": {
+        "windows": 6979,
+        "tokens": 1402030,
+        "ts_tokens": 132959
+      },
+      "taskmaster2": {
+        "windows": 6835,
+        "tokens": 1226237,
+        "ts_tokens": 108750
+      },
+      "taskmaster3": {
+        "windows": 26578,
+        "tokens": 5447724,
+        "ts_tokens": 415263
+      },
+      "metawoz": {
+        "windows": 31846,
+        "tokens": 3312328,
+        "ts_tokens": 363040
+      }
+    },
+    "validation": {
+      "daily_dialog": {
+        "windows": 720,
+        "tokens": 94177,
+        "ts_tokens": 6714
+      },
+      "personachat": {
+        "windows": 1000,
+        "tokens": 182044,
+        "ts_tokens": 15592
+      },
+      "multiwoz21": {
+        "windows": 1170,
+        "tokens": 233658,
+        "ts_tokens": 14196
+      },
+      "ccpe": {
+        "windows": 25,
+        "tokens": 5336,
+        "ts_tokens": 370
+      },
+      "taskmaster1": {
+        "windows": 861,
+        "tokens": 174676,
+        "ts_tokens": 16544
+      },
+      "taskmaster2": {
+        "windows": 379,
+        "tokens": 65863,
+        "ts_tokens": 5847
+      },
+      "taskmaster3": {
+        "windows": 1468,
+        "tokens": 303794,
+        "ts_tokens": 22980
+      },
+      "metawoz": {
+        "windows": 3520,
+        "tokens": 365456,
+        "ts_tokens": 40128
+      }
+    },
+    "test": {
+      "daily_dialog": {
+        "windows": 680,
+        "tokens": 91059,
+        "ts_tokens": 6277
+      },
+      "personachat": {
+        "windows": 969,
+        "tokens": 173903,
+        "ts_tokens": 15023
+      },
+      "multiwoz21": {
+        "windows": 1163,
+        "tokens": 233324,
+        "ts_tokens": 14204
+      },
+      "ccpe": {
+        "windows": 39,
+        "tokens": 8210,
+        "ts_tokens": 400
+      },
+      "taskmaster1": {
+        "windows": 858,
+        "tokens": 174312,
+        "ts_tokens": 16491
+      },
+      "taskmaster2": {
+        "windows": 369,
+        "tokens": 65943,
+        "ts_tokens": 5970
+      },
+      "taskmaster3": {
+        "windows": 1517,
+        "tokens": 309787,
+        "ts_tokens": 23159
+      },
+      "metawoz": {
+        "windows": 2202,
+        "tokens": 241803,
+        "ts_tokens": 24905
+      }
+    }
+  },
+  "totals": {
+    "train": {
+      "path": "train.jsonl",
+      "sha256": "329f60780d17c264dc497acc169b34dc2b180236fbb9fd033194189ae31f4acb",
+      "windows": 98998,
+      "tokens": 15824394,
+      "ts_tokens": 1340806
+    },
+    "validation": {
+      "path": "validation.jsonl",
+      "sha256": "1aa5dd3909030c7c57002884d97d2ae04f466b38196291701687e12935afd6c2",
+      "windows": 9143,
+      "tokens": 1425004,
+      "ts_tokens": 122371
+    },
+    "test": {
+      "path": "test.jsonl",
+      "sha256": "177b8400d9be845a16b258910be1ae3d35369e3d28d4b1d7739ebd4757b337a2",
+      "windows": 7797,
+      "tokens": 1298341,
+      "ts_tokens": 106429
+    }
+  },
+  "settings": {
+    "max_length": 256,
+    "keep_length": 64,
+    "overlap_length": 10,
+    "limit_dialogues_per_split": null
+  },
+  "special_token_ids": {
+    "ts": 50257,
+    "speaker1": 50258,
+    "speaker2": 50259
+  }
+}

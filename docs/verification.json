@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "date": "2026-10-18",
+  "gpu_experiments_started": false,
+  "copied_files": 117,
+  "copied_data_and_results_byte_identical": true,
+  "independent_regular_files": true,
+  "weights_included": false,
+  "source_unchanged": {
+    "file_count": 3567,
+    "all_file_sizes_and_mtimes_match": true,
+    "all_copied_source_checksums_match": true
+  },
+  "cpu_regression_tests": {
+    "passed": 18,
+    "command": "CUDA_VISIBLE_DEVICES='' python -m unittest discover -s tests -v"
+  },
+  "cli_help_checks": 17,
+  "core_numerical_functions_matching_source_ast": 8,
+  "main_cache_checks": {
+    "sha256": true,
+    "window_and_token_counts": true,
+    "speaker_alignment": true,
+    "duplicate_window_keys": true
+  },
+  "historical_main_result_summary": "recomputed from confusion counts and matched packaged manifests",
+  "supplementary_context_cache": "all input checksums and schema validated",
+  "source_manifest_relocation": "all 16 formal corpus/tokenizer references resolved inside package",
+  "full_preprocessing_rebuild": {
+    "qwen3": {
+      "train": {
+        "sha256": "9ef2161b0e4e9e35a4120f7a5b1b8c14649893560e205dfcd592b18b198fbb2d",
+        "matches_packaged_cache": true,
+        "windows": 101564
+      },
+      "validation": {
+        "sha256": "553807dc68b70b9ac6579f1fc6f2f251bcddcc1385129572e38cac96ea096f0c",
+        "matches_packaged_cache": true,
+        "windows": 9377
+      },
+      "test": {
+        "sha256": "c3224ddf47e9b95e1159ea20ee6a66d68d760c61752e66ad69401229f6e8cc15",
+        "matches_packaged_cache": true,
+        "windows": 7968
+      }
+    },
+    "gpt2": {
+      "train": {
+        "sha256": "329f60780d17c264dc497acc169b34dc2b180236fbb9fd033194189ae31f4acb",
+        "matches_packaged_cache": true,
+        "windows": 98998
+      },
+      "validation": {
+        "sha256": "1aa5dd3909030c7c57002884d97d2ae04f466b38196291701687e12935afd6c2",
+        "matches_packaged_cache": true,
+        "windows": 9143
+      },
+      "test": {
+        "sha256": "177b8400d9be845a16b258910be1ae3d35369e3d28d4b1d7739ebd4757b337a2",
+        "matches_packaged_cache": true,
+        "windows": 7797
+      }
+    }
+  },
+  "limitations": [
+    "GPU training/inference were not rerun; main metrics are copied historical results.",
+    "Model weights and a complete historical transitive dependency lockfile are not included."
+  ],
+  "documentation": {
+    "local_links_valid": 18,
+    "shell_examples_parse": 15,
+    "shell_wrappers_parse": 8
+  }
+}

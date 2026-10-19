@@ -1,0 +1,64 @@
+{
+  "status": "ok",
+  "scope": "taskmaster2_3",
+  "source_manifest": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/raw/taskmaster/manifest.json",
+  "split_manifests": [
+    "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/datasets_turntaking/datasets_turntaking/dataset/written_dialog/splits/taskmaster2_splits.json",
+    "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/datasets_turntaking/datasets_turntaking/dataset/written_dialog/splits/taskmaster3_splits.json"
+  ],
+  "settings": {
+    "max_length": 256,
+    "keep_length": 64,
+    "overlap_length": 10
+  },
+  "special_token_ids": {
+    "ts": 151669,
+    "speaker1": 151670,
+    "speaker2": 151671
+  },
+  "splits": {
+    "train": {
+      "taskmaster2_source_dialogues": 6126,
+      "taskmaster3_source_dialogues": 21381,
+      "filtered_dialogues": 7,
+      "taskmaster2_accepted_dialogues": 6126,
+      "taskmaster2_turns": 111081,
+      "taskmaster2_tokens": 1281922,
+      "taskmaster2_ts_tokens": 111081,
+      "taskmaster2_windows": 6998,
+      "taskmaster3_accepted_dialogues": 21374,
+      "taskmaster3_turns": 429148,
+      "taskmaster3_tokens": 5840681,
+      "taskmaster3_ts_tokens": 429148,
+      "taskmaster3_windows": 28044
+    },
+    "validation": {
+      "taskmaster2_source_dialogues": 340,
+      "taskmaster3_source_dialogues": 1188,
+      "taskmaster2_accepted_dialogues": 340,
+      "taskmaster2_turns": 5922,
+      "taskmaster2_tokens": 68503,
+      "taskmaster2_ts_tokens": 5922,
+      "taskmaster2_windows": 389,
+      "taskmaster3_accepted_dialogues": 1188,
+      "taskmaster3_turns": 23775,
+      "taskmaster3_tokens": 325466,
+      "taskmaster3_ts_tokens": 23775,
+      "taskmaster3_windows": 1547
+    },
+    "test": {
+      "taskmaster2_source_dialogues": 341,
+      "taskmaster3_source_dialogues": 1188,
+      "taskmaster2_accepted_dialogues": 341,
+      "taskmaster2_turns": 6132,
+      "taskmaster2_tokens": 69081,
+      "taskmaster2_ts_tokens": 6132,
+      "taskmaster2_windows": 378,
+      "taskmaster3_accepted_dialogues": 1188,
+      "taskmaster3_turns": 23883,
+      "taskmaster3_tokens": 330329,
+      "taskmaster3_ts_tokens": 23883,
+      "taskmaster3_windows": 1586
+    }
+  }
+}

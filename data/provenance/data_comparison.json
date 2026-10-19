@@ -1,0 +1,527 @@
+{
+  "status": "ok",
+  "protocol": "same_source_dialogues_and_splits_native_token_windows",
+  "gpt2_data": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/gpt2_turngpt_8dataset_v1/merged",
+  "qwen_data": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/qwen3_turngpt_verified_8dataset_v2",
+  "gpt2_manifest_sha256": "6bd904cb37f1972c9c62211068e623f024eedc8718f4900bc52acd0d8ca0bc98",
+  "qwen_manifest_sha256": "b28fc148c1fccdf488d3575bc36b903327e0ee9eb292ee61db5da4616df685c5",
+  "source_checks": {
+    "daily_dialog": {
+      "gpt2_source_manifest_sha256": "b188d81082aede5356e12a53a8eba3627d238afc1c1c89005b5f65faad88f7ec",
+      "qwen_source_manifest_sha256": "637fe1172429795c6bab7d28321677bc273e1c7bd3fb1572aeb05741c7523312",
+      "source_counts": {
+        "train/source_dialogues": 11118,
+        "train/selected_dialogues": 11118,
+        "train/accepted_dialogues": 11117,
+        "train/turns": 87160,
+        "train/filtered_dialogues": 1,
+        "validation/source_dialogues": 1000,
+        "validation/selected_dialogues": 1000,
+        "validation/accepted_dialogues": 1000,
+        "validation/turns": 8069,
+        "test/source_dialogues": 1000,
+        "test/selected_dialogues": 1000,
+        "test/accepted_dialogues": 1000,
+        "test/turns": 7740
+      }
+    },
+    "personachat": {
+      "gpt2_source_manifest_sha256": "b188d81082aede5356e12a53a8eba3627d238afc1c1c89005b5f65faad88f7ec",
+      "qwen_source_manifest_sha256": "637fe1172429795c6bab7d28321677bc273e1c7bd3fb1572aeb05741c7523312",
+      "source_counts": {
+        "train/source_dialogues": 8939,
+        "train/selected_dialogues": 8939,
+        "train/accepted_dialogues": 8938,
+        "train/turns": 131422,
+        "train/filtered_dialogues": 1,
+        "validation/source_dialogues": 1000,
+        "validation/selected_dialogues": 1000,
+        "validation/accepted_dialogues": 1000,
+        "validation/turns": 15602,
+        "test/source_dialogues": 968,
+        "test/selected_dialogues": 968,
+        "test/accepted_dialogues": 968,
+        "test/turns": 15024
+      }
+    },
+    "multiwoz21": {
+      "gpt2_source_manifest_sha256": "b188d81082aede5356e12a53a8eba3627d238afc1c1c89005b5f65faad88f7ec",
+      "qwen_source_manifest_sha256": "637fe1172429795c6bab7d28321677bc273e1c7bd3fb1572aeb05741c7523312",
+      "source_counts": {
+        "train/source_dialogues": 8438,
+        "train/selected_dialogues": 8438,
+        "train/accepted_dialogues": 8438,
+        "train/turns": 113556,
+        "validation/source_dialogues": 1000,
+        "validation/selected_dialogues": 1000,
+        "validation/accepted_dialogues": 1000,
+        "validation/turns": 14748,
+        "test/source_dialogues": 1000,
+        "test/selected_dialogues": 1000,
+        "test/accepted_dialogues": 1000,
+        "test/turns": 14744
+      }
+    },
+    "ccpe": {
+      "gpt2_source_manifest_sha256": "95a5e06b942bcb4d7a215838b9fda6fa977e333e135048241a5cd6ab0fff6327",
+      "qwen_source_manifest_sha256": "fa59f951d0c9fead0e5e8e82d57a5805cb6745fe8bd1a1255492dff70b5270b4",
+      "source_counts": {
+        "train/source_dialogues": 461,
+        "train/accepted_dialogues": 461,
+        "train/turns": 9811,
+        "validation/source_dialogues": 18,
+        "validation/accepted_dialogues": 18,
+        "validation/turns": 381,
+        "test/source_dialogues": 23,
+        "test/accepted_dialogues": 23,
+        "test/turns": 405
+      }
+    },
+    "taskmaster1": {
+      "gpt2_source_manifest_sha256": "ace1f03422fa93ff3ecf2c4174cdac07a0a72a6a1fc788878d55904a1df98ac9",
+      "qwen_source_manifest_sha256": "568242e63336cd98c81f2e2aa806888b017823d411293220c74881a800bba132",
+      "source_counts": {
+        "train/source_dialogues": 6168,
+        "train/missing_dialogues": 0,
+        "train/accepted_dialogues": 6165,
+        "train/filtered_dialogues": 3,
+        "train/turns": 135567,
+        "validation/source_dialogues": 770,
+        "validation/missing_dialogues": 0,
+        "validation/accepted_dialogues": 769,
+        "validation/filtered_dialogues": 1,
+        "validation/turns": 16877,
+        "test/source_dialogues": 770,
+        "test/missing_dialogues": 0,
+        "test/accepted_dialogues": 769,
+        "test/filtered_dialogues": 1,
+        "test/turns": 16894
+      }
+    },
+    "taskmaster2": {
+      "gpt2_source_manifest_sha256": "6fcd54cc4be6e0ac5e3d2a9fd3f3f3c9ca5ed0142f36726bac0fade935ccbb2e",
+      "qwen_source_manifest_sha256": "2c48337070cfe1ec885482083b3b8a4278f978bff346574f8a496eb8e4fdd221",
+      "source_counts": {
+        "train/taskmaster2_source_dialogues": 6126,
+        "train/taskmaster3_source_dialogues": 21381,
+        "train/filtered_dialogues": 7,
+        "train/taskmaster2_accepted_dialogues": 6126,
+        "train/taskmaster2_turns": 111081,
+        "train/taskmaster3_accepted_dialogues": 21374,
+        "train/taskmaster3_turns": 429148,
+        "validation/taskmaster2_source_dialogues": 340,
+        "validation/taskmaster3_source_dialogues": 1188,
+        "validation/taskmaster2_accepted_dialogues": 340,
+        "validation/taskmaster2_turns": 5922,
+        "validation/taskmaster3_accepted_dialogues": 1188,
+        "validation/taskmaster3_turns": 23775,
+        "test/taskmaster2_source_dialogues": 341,
+        "test/taskmaster3_source_dialogues": 1188,
+        "test/taskmaster2_accepted_dialogues": 341,
+        "test/taskmaster2_turns": 6132,
+        "test/taskmaster3_accepted_dialogues": 1188,
+        "test/taskmaster3_turns": 23883
+      }
+    },
+    "taskmaster3": {
+      "gpt2_source_manifest_sha256": "6fcd54cc4be6e0ac5e3d2a9fd3f3f3c9ca5ed0142f36726bac0fade935ccbb2e",
+      "qwen_source_manifest_sha256": "2c48337070cfe1ec885482083b3b8a4278f978bff346574f8a496eb8e4fdd221",
+      "source_counts": {
+        "train/taskmaster2_source_dialogues": 6126,
+        "train/taskmaster3_source_dialogues": 21381,
+        "train/filtered_dialogues": 7,
+        "train/taskmaster2_accepted_dialogues": 6126,
+        "train/taskmaster2_turns": 111081,
+        "train/taskmaster3_accepted_dialogues": 21374,
+        "train/taskmaster3_turns": 429148,
+        "validation/taskmaster2_source_dialogues": 340,
+        "validation/taskmaster3_source_dialogues": 1188,
+        "validation/taskmaster2_accepted_dialogues": 340,
+        "validation/taskmaster2_turns": 5922,
+        "validation/taskmaster3_accepted_dialogues": 1188,
+        "validation/taskmaster3_turns": 23775,
+        "test/taskmaster2_source_dialogues": 341,
+        "test/taskmaster3_source_dialogues": 1188,
+        "test/taskmaster2_accepted_dialogues": 341,
+        "test/taskmaster2_turns": 6132,
+        "test/taskmaster3_accepted_dialogues": 1188,
+        "test/taskmaster3_turns": 23883
+      }
+    },
+    "metawoz": {
+      "gpt2_source_manifest_sha256": "ce5b6ba614c04989790b1fea44b932f451387b33dbfbb273eedaa7e57c90a002",
+      "qwen_source_manifest_sha256": "5a644dda04335128dd7f93e7549acded03114529855506984770a56c5837fcc6",
+      "source_counts": {
+        "train/source_dialogues": 34095,
+        "train/filtered_dialogues": 57,
+        "train/accepted_dialogues": 34038,
+        "train/turns": 388185,
+        "validation/source_dialogues": 3789,
+        "validation/filtered_dialogues": 6,
+        "validation/accepted_dialogues": 3783,
+        "validation/turns": 43092,
+        "test/source_dialogues": 2319,
+        "test/filtered_dialogues": 1,
+        "test/accepted_dialogues": 2318,
+        "test/turns": 26188
+      }
+    }
+  },
+  "splits": {
+    "train": {
+      "shared_retained_dialogues": 90217,
+      "gpt2_only_retained_dialogues": 191,
+      "qwen_only_retained_dialogues": 464,
+      "shared_text_prefixes_match": true,
+      "gpt2": {
+        "path": "train.jsonl",
+        "sha256": "329f60780d17c264dc497acc169b34dc2b180236fbb9fd033194189ae31f4acb",
+        "windows": 98998,
+        "tokens": 15824394,
+        "ts_tokens": 1340806
+      },
+      "qwen3": {
+        "path": "train.jsonl",
+        "sha256": "9ef2161b0e4e9e35a4120f7a5b1b8c14649893560e205dfcd592b18b198fbb2d",
+        "windows": 101564,
+        "tokens": 16426714,
+        "ts_tokens": 1342364
+      },
+      "corpora": {
+        "daily_dialog": {
+          "gpt2": {
+            "windows": 7579,
+            "tokens": 1011474,
+            "ts_tokens": 70529
+          },
+          "qwen3": {
+            "windows": 7531,
+            "tokens": 1002202,
+            "ts_tokens": 70415
+          }
+        },
+        "personachat": {
+          "gpt2": {
+            "windows": 8955,
+            "tokens": 1506761,
+            "ts_tokens": 131374
+          },
+          "qwen3": {
+            "windows": 8956,
+            "tokens": 1504275,
+            "ts_tokens": 131379
+          }
+        },
+        "multiwoz21": {
+          "gpt2": {
+            "windows": 9477,
+            "tokens": 1757034,
+            "ts_tokens": 109215
+          },
+          "qwen3": {
+            "windows": 10052,
+            "tokens": 1876272,
+            "ts_tokens": 109504
+          }
+        },
+        "ccpe": {
+          "gpt2": {
+            "windows": 749,
+            "tokens": 160806,
+            "ts_tokens": 9676
+          },
+          "qwen3": {
+            "windows": 752,
+            "tokens": 160970,
+            "ts_tokens": 9694
+          }
+        },
+        "taskmaster1": {
+          "gpt2": {
+            "windows": 6979,
+            "tokens": 1402030,
+            "ts_tokens": 132959
+          },
+          "qwen3": {
+            "windows": 7156,
+            "tokens": 1452852,
+            "ts_tokens": 132809
+          }
+        },
+        "taskmaster2": {
+          "gpt2": {
+            "windows": 6835,
+            "tokens": 1226237,
+            "ts_tokens": 108750
+          },
+          "qwen3": {
+            "windows": 6998,
+            "tokens": 1272521,
+            "ts_tokens": 108893
+          }
+        },
+        "taskmaster3": {
+          "gpt2": {
+            "windows": 26578,
+            "tokens": 5447724,
+            "ts_tokens": 415263
+          },
+          "qwen3": {
+            "windows": 28044,
+            "tokens": 5749432,
+            "ts_tokens": 414155
+          }
+        },
+        "metawoz": {
+          "gpt2": {
+            "windows": 31846,
+            "tokens": 3312328,
+            "ts_tokens": 363040
+          },
+          "qwen3": {
+            "windows": 32075,
+            "tokens": 3408190,
+            "ts_tokens": 365515
+          }
+        }
+      }
+    },
+    "validation": {
+      "shared_retained_dialogues": 8511,
+      "gpt2_only_retained_dialogues": 17,
+      "qwen_only_retained_dialogues": 55,
+      "shared_text_prefixes_match": true,
+      "gpt2": {
+        "path": "validation.jsonl",
+        "sha256": "1aa5dd3909030c7c57002884d97d2ae04f466b38196291701687e12935afd6c2",
+        "windows": 9143,
+        "tokens": 1425004,
+        "ts_tokens": 122371
+      },
+      "qwen3": {
+        "path": "validation.jsonl",
+        "sha256": "553807dc68b70b9ac6579f1fc6f2f251bcddcc1385129572e38cac96ea096f0c",
+        "windows": 9377,
+        "tokens": 1476991,
+        "ts_tokens": 122685
+      },
+      "corpora": {
+        "daily_dialog": {
+          "gpt2": {
+            "windows": 720,
+            "tokens": 94177,
+            "ts_tokens": 6714
+          },
+          "qwen3": {
+            "windows": 721,
+            "tokens": 93972,
+            "ts_tokens": 6725
+          }
+        },
+        "personachat": {
+          "gpt2": {
+            "windows": 1000,
+            "tokens": 182044,
+            "ts_tokens": 15592
+          },
+          "qwen3": {
+            "windows": 1000,
+            "tokens": 182034,
+            "ts_tokens": 15593
+          }
+        },
+        "multiwoz21": {
+          "gpt2": {
+            "windows": 1170,
+            "tokens": 233658,
+            "ts_tokens": 14196
+          },
+          "qwen3": {
+            "windows": 1253,
+            "tokens": 250426,
+            "ts_tokens": 14214
+          }
+        },
+        "ccpe": {
+          "gpt2": {
+            "windows": 25,
+            "tokens": 5336,
+            "ts_tokens": 370
+          },
+          "qwen3": {
+            "windows": 26,
+            "tokens": 5391,
+            "ts_tokens": 374
+          }
+        },
+        "taskmaster1": {
+          "gpt2": {
+            "windows": 861,
+            "tokens": 174676,
+            "ts_tokens": 16544
+          },
+          "qwen3": {
+            "windows": 886,
+            "tokens": 180749,
+            "ts_tokens": 16519
+          }
+        },
+        "taskmaster2": {
+          "gpt2": {
+            "windows": 379,
+            "tokens": 65863,
+            "ts_tokens": 5847
+          },
+          "qwen3": {
+            "windows": 389,
+            "tokens": 68414,
+            "ts_tokens": 5858
+          }
+        },
+        "taskmaster3": {
+          "gpt2": {
+            "windows": 1468,
+            "tokens": 303794,
+            "ts_tokens": 22980
+          },
+          "qwen3": {
+            "windows": 1547,
+            "tokens": 319770,
+            "ts_tokens": 22901
+          }
+        },
+        "metawoz": {
+          "gpt2": {
+            "windows": 3520,
+            "tokens": 365456,
+            "ts_tokens": 40128
+          },
+          "qwen3": {
+            "windows": 3555,
+            "tokens": 376235,
+            "ts_tokens": 40501
+          }
+        }
+      }
+    },
+    "test": {
+      "shared_retained_dialogues": 7133,
+      "gpt2_only_retained_dialogues": 14,
+      "qwen_only_retained_dialogues": 16,
+      "shared_text_prefixes_match": true,
+      "gpt2": {
+        "path": "test.jsonl",
+        "sha256": "177b8400d9be845a16b258910be1ae3d35369e3d28d4b1d7739ebd4757b337a2",
+        "windows": 7797,
+        "tokens": 1298341,
+        "ts_tokens": 106429
+      },
+      "qwen3": {
+        "path": "test.jsonl",
+        "sha256": "c3224ddf47e9b95e1159ea20ee6a66d68d760c61752e66ad69401229f6e8cc15",
+        "windows": 7968,
+        "tokens": 1339818,
+        "ts_tokens": 106304
+      },
+      "corpora": {
+        "daily_dialog": {
+          "gpt2": {
+            "windows": 680,
+            "tokens": 91059,
+            "ts_tokens": 6277
+          },
+          "qwen3": {
+            "windows": 679,
+            "tokens": 90401,
+            "ts_tokens": 6274
+          }
+        },
+        "personachat": {
+          "gpt2": {
+            "windows": 969,
+            "tokens": 173903,
+            "ts_tokens": 15023
+          },
+          "qwen3": {
+            "windows": 969,
+            "tokens": 173455,
+            "ts_tokens": 15023
+          }
+        },
+        "multiwoz21": {
+          "gpt2": {
+            "windows": 1163,
+            "tokens": 233324,
+            "ts_tokens": 14204
+          },
+          "qwen3": {
+            "windows": 1234,
+            "tokens": 249309,
+            "ts_tokens": 14179
+          }
+        },
+        "ccpe": {
+          "gpt2": {
+            "windows": 39,
+            "tokens": 8210,
+            "ts_tokens": 400
+          },
+          "qwen3": {
+            "windows": 39,
+            "tokens": 8203,
+            "ts_tokens": 400
+          }
+        },
+        "taskmaster1": {
+          "gpt2": {
+            "windows": 858,
+            "tokens": 174312,
+            "ts_tokens": 16491
+          },
+          "qwen3": {
+            "windows": 883,
+            "tokens": 180559,
+            "ts_tokens": 16475
+          }
+        },
+        "taskmaster2": {
+          "gpt2": {
+            "windows": 369,
+            "tokens": 65943,
+            "ts_tokens": 5970
+          },
+          "qwen3": {
+            "windows": 378,
+            "tokens": 68323,
+            "ts_tokens": 5979
+          }
+        },
+        "taskmaster3": {
+          "gpt2": {
+            "windows": 1517,
+            "tokens": 309787,
+            "ts_tokens": 23159
+          },
+          "qwen3": {
+            "windows": 1586,
+            "tokens": 325293,
+            "ts_tokens": 23091
+          }
+        },
+        "metawoz": {
+          "gpt2": {
+            "windows": 2202,
+            "tokens": 241803,
+            "ts_tokens": 24905
+          },
+          "qwen3": {
+            "windows": 2200,
+            "tokens": 244275,
+            "ts_tokens": 24883
+          }
+        }
+      }
+    }
+  },
+  "limitation": "Native tokenizers change window endpoints, retained short dialogues, prediction positions and class prevalence."
+}

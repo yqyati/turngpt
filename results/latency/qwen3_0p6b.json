@@ -1,0 +1,4880 @@
+{
+  "status": "ok",
+  "schema_version": 1,
+  "benchmark": "turngpt_next_position_latency",
+  "checkpoint": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/model/qwen3_0p6b_turngpt_8dataset_500step/model",
+  "data_dir": "/mnt/shared-storage-gpfs2/ai4sgi-gpfs2/yangqingyu/workspace/kth/data/processed/qwen3_turngpt_verified_8dataset_v2",
+  "data_manifest_sha256": "b28fc148c1fccdf488d3575bc36b903327e0ee9eb292ee61db5da4616df685c5",
+  "input_samples_sha256": "7f64a72fde5359b44ac34f13125e1d5c3aa6705f9be273a6a5f72e90a3fb3ce6",
+  "sample_count": 184,
+  "eligible_windows_by_corpus": {
+    "ccpe": 21,
+    "daily_dialog": 37,
+    "metawoz": 1,
+    "multiwoz21": 504,
+    "personachat": 2,
+    "taskmaster1": 279,
+    "taskmaster2": 86,
+    "taskmaster3": 738
+  },
+  "sampled_windows_by_corpus": {
+    "ccpe": 21,
+    "daily_dialog": 32,
+    "metawoz": 1,
+    "multiwoz21": 32,
+    "personachat": 2,
+    "taskmaster1": 32,
+    "taskmaster2": 32,
+    "taskmaster3": 32
+  },
+  "special_token_ids": {
+    "ts": 151669,
+    "speaker1": 151670,
+    "speaker2": 151671
+  },
+  "context_length": 256,
+  "batch_size": 1,
+  "windows_per_dataset": 32,
+  "seed": 1,
+  "warmup_requests": 20,
+  "repeats": 3,
+  "dtype": "bfloat16",
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA H200",
+  "gpu_uuid": "6d89a612-8d87-f088-a0ec-27c3c212531a",
+  "torch_version": "2.8.0+cu128",
+  "transformers_version": "4.56.2",
+  "cuda_version": "12.8",
+  "attention_implementation": "sdpa",
+  "torch_num_threads": 1,
+  "tf32": false,
+  "use_cache": false,
+  "logits_to_keep": 1,
+  "timing_scope": "gpu_resident_inputs_to_cpu_next_ts_probability_no_kv_cache",
+  "timer": "perf_counter_ns; synchronize before; scalar .item() before stop",
+  "excluded": [
+    "model_loading",
+    "tokenization",
+    "disk_io",
+    "input_host_to_device",
+    "warmup"
+  ],
+  "percentile_method": "linear_interpolation_at_(n-1)*q",
+  "summary": {
+    "requests": 552,
+    "mean_ms": 12.50716909963768,
+    "p50_ms": 12.4338875,
+    "p95_ms": 13.658115899999999
+  },
+  "per_repeat": [
+    {
+      "repeat": 1,
+      "requests": 184,
+      "mean_ms": 12.62883825,
+      "p50_ms": 12.613016,
+      "p95_ms": 13.782347399999999
+    },
+    {
+      "repeat": 2,
+      "requests": 184,
+      "mean_ms": 12.528114717391304,
+      "p50_ms": 12.4493825,
+      "p95_ms": 13.57326385
+    },
+    {
+      "repeat": 3,
+      "requests": 184,
+      "mean_ms": 12.364554331521738,
+      "p50_ms": 12.269730500000001,
+      "p95_ms": 13.5528452
+    }
+  ],
+  "sample_refs": [
+    {
+      "sample_id": 0,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3645
+    },
+    {
+      "sample_id": 1,
+      "dataset": "daily_dialog",
+      "jsonl_line": 105
+    },
+    {
+      "sample_id": 2,
+      "dataset": "multiwoz21",
+      "jsonl_line": 1853
+    },
+    {
+      "sample_id": 3,
+      "dataset": "taskmaster3",
+      "jsonl_line": 5579
+    },
+    {
+      "sample_id": 4,
+      "dataset": "taskmaster2",
+      "jsonl_line": 3894
+    },
+    {
+      "sample_id": 5,
+      "dataset": "daily_dialog",
+      "jsonl_line": 530
+    },
+    {
+      "sample_id": 6,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2385
+    },
+    {
+      "sample_id": 7,
+      "dataset": "taskmaster3",
+      "jsonl_line": 4972
+    },
+    {
+      "sample_id": 8,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2144
+    },
+    {
+      "sample_id": 9,
+      "dataset": "taskmaster3",
+      "jsonl_line": 5306
+    },
+    {
+      "sample_id": 10,
+      "dataset": "ccpe",
+      "jsonl_line": 2917
+    },
+    {
+      "sample_id": 11,
+      "dataset": "taskmaster3",
+      "jsonl_line": 4631
+    },
+    {
+      "sample_id": 12,
+      "dataset": "taskmaster3",
+      "jsonl_line": 4952
+    },
+    {
+      "sample_id": 13,
+      "dataset": "taskmaster2",
+      "jsonl_line": 4045
+    },
+    {
+      "sample_id": 14,
+      "dataset": "daily_dialog",
+      "jsonl_line": 591
+    },
+    {
+      "sample_id": 15,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3763
+    },
+    {
+      "sample_id": 16,
+      "dataset": "taskmaster3",
+      "jsonl_line": 4524
+    },
+    {
+      "sample_id": 17,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3325
+    },
+    {
+      "sample_id": 18,
+      "dataset": "daily_dialog",
+      "jsonl_line": 568
+    },
+    {
+      "sample_id": 19,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2314
+    },
+    {
+      "sample_id": 20,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3166
+    },
+    {
+      "sample_id": 21,
+      "dataset": "taskmaster2",
+      "jsonl_line": 3981
+    },
+    {
+      "sample_id": 22,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2428
+    },
+    {
+      "sample_id": 23,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3395
+    },
+    {
+      "sample_id": 24,
+      "dataset": "daily_dialog",
+      "jsonl_line": 505
+    },
+    {
+      "sample_id": 25,
+      "dataset": "taskmaster3",
+      "jsonl_line": 4741
+    },
+    {
+      "sample_id": 26,
+      "dataset": "daily_dialog",
+      "jsonl_line": 306
+    },
+    {
+      "sample_id": 27,
+      "dataset": "taskmaster2",
+      "jsonl_line": 4145
+    },
+    {
+      "sample_id": 28,
+      "dataset": "daily_dialog",
+      "jsonl_line": 231
+    },
+    {
+      "sample_id": 29,
+      "dataset": "taskmaster3",
+      "jsonl_line": 4264
+    },
+    {
+      "sample_id": 30,
+      "dataset": "daily_dialog",
+      "jsonl_line": 570
+    },
+    {
+      "sample_id": 31,
+      "dataset": "daily_dialog",
+      "jsonl_line": 34
+    },
+    {
+      "sample_id": 32,
+      "dataset": "taskmaster3",
+      "jsonl_line": 5584
+    },
+    {
+      "sample_id": 33,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3448
+    },
+    {
+      "sample_id": 34,
+      "dataset": "daily_dialog",
+      "jsonl_line": 155
+    },
+    {
+      "sample_id": 35,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2383
+    },
+    {
+      "sample_id": 36,
+      "dataset": "taskmaster3",
+      "jsonl_line": 5211
+    },
+    {
+      "sample_id": 37,
+      "dataset": "multiwoz21",
+      "jsonl_line": 1828
+    },
+    {
+      "sample_id": 38,
+      "dataset": "ccpe",
+      "jsonl_line": 2889
+    },
+    {
+      "sample_id": 39,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3289
+    },
+    {
+      "sample_id": 40,
+      "dataset": "daily_dialog",
+      "jsonl_line": 414
+    },
+    {
+      "sample_id": 41,
+      "dataset": "daily_dialog",
+      "jsonl_line": 304
+    },
+    {
+      "sample_id": 42,
+      "dataset": "daily_dialog",
+      "jsonl_line": 626
+    },
+    {
+      "sample_id": 43,
+      "dataset": "taskmaster2",
+      "jsonl_line": 4082
+    },
+    {
+      "sample_id": 44,
+      "dataset": "daily_dialog",
+      "jsonl_line": 189
+    },
+    {
+      "sample_id": 45,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3724
+    },
+    {
+      "sample_id": 46,
+      "dataset": "daily_dialog",
+      "jsonl_line": 183
+    },
+    {
+      "sample_id": 47,
+      "dataset": "taskmaster3",
+      "jsonl_line": 4563
+    },
+    {
+      "sample_id": 48,
+      "dataset": "ccpe",
+      "jsonl_line": 2894
+    },
+    {
+      "sample_id": 49,
+      "dataset": "taskmaster3",
+      "jsonl_line": 5127
+    },
+    {
+      "sample_id": 50,
+      "dataset": "personachat",
+      "jsonl_line": 935
+    },
+    {
+      "sample_id": 51,
+      "dataset": "taskmaster2",
+      "jsonl_line": 3862
+    },
+    {
+      "sample_id": 52,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2313
+    },
+    {
+      "sample_id": 53,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3547
+    },
+    {
+      "sample_id": 54,
+      "dataset": "taskmaster2",
+      "jsonl_line": 4174
+    },
+    {
+      "sample_id": 55,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3118
+    },
+    {
+      "sample_id": 56,
+      "dataset": "taskmaster3",
+      "jsonl_line": 5314
+    },
+    {
+      "sample_id": 57,
+      "dataset": "multiwoz21",
+      "jsonl_line": 1944
+    },
+    {
+      "sample_id": 58,
+      "dataset": "taskmaster2",
+      "jsonl_line": 3923
+    },
+    {
+      "sample_id": 59,
+      "dataset": "ccpe",
+      "jsonl_line": 2908
+    },
+    {
+      "sample_id": 60,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2568
+    },
+    {
+      "sample_id": 61,
+      "dataset": "ccpe",
+      "jsonl_line": 2897
+    },
+    {
+      "sample_id": 62,
+      "dataset": "taskmaster3",
+      "jsonl_line": 4815
+    },
+    {
+      "sample_id": 63,
+      "dataset": "taskmaster2",
+      "jsonl_line": 3910
+    },
+    {
+      "sample_id": 64,
+      "dataset": "taskmaster3",
+      "jsonl_line": 5540
+    },
+    {
+      "sample_id": 65,
+      "dataset": "daily_dialog",
+      "jsonl_line": 373
+    },
+    {
+      "sample_id": 66,
+      "dataset": "daily_dialog",
+      "jsonl_line": 494
+    },
+    {
+      "sample_id": 67,
+      "dataset": "taskmaster3",
+      "jsonl_line": 4784
+    },
+    {
+      "sample_id": 68,
+      "dataset": "taskmaster2",
+      "jsonl_line": 4134
+    },
+    {
+      "sample_id": 69,
+      "dataset": "taskmaster3",
+      "jsonl_line": 4646
+    },
+    {
+      "sample_id": 70,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3417
+    },
+    {
+      "sample_id": 71,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3619
+    },
+    {
+      "sample_id": 72,
+      "dataset": "daily_dialog",
+      "jsonl_line": 669
+    },
+    {
+      "sample_id": 73,
+      "dataset": "ccpe",
+      "jsonl_line": 2904
+    },
+    {
+      "sample_id": 74,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2566
+    },
+    {
+      "sample_id": 75,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3165
+    },
+    {
+      "sample_id": 76,
+      "dataset": "daily_dialog",
+      "jsonl_line": 649
+    },
+    {
+      "sample_id": 77,
+      "dataset": "taskmaster3",
+      "jsonl_line": 5763
+    },
+    {
+      "sample_id": 78,
+      "dataset": "taskmaster3",
+      "jsonl_line": 5756
+    },
+    {
+      "sample_id": 79,
+      "dataset": "taskmaster2",
+      "jsonl_line": 3854
+    },
+    {
+      "sample_id": 80,
+      "dataset": "daily_dialog",
+      "jsonl_line": 52
+    },
+    {
+      "sample_id": 81,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3700
+    },
+    {
+      "sample_id": 82,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2416
+    },
+    {
+      "sample_id": 83,
+      "dataset": "taskmaster2",
+      "jsonl_line": 3974
+    },
+    {
+      "sample_id": 84,
+      "dataset": "taskmaster2",
+      "jsonl_line": 3867
+    },
+    {
+      "sample_id": 85,
+      "dataset": "taskmaster3",
+      "jsonl_line": 5347
+    },
+    {
+      "sample_id": 86,
+      "dataset": "ccpe",
+      "jsonl_line": 2886
+    },
+    {
+      "sample_id": 87,
+      "dataset": "multiwoz21",
+      "jsonl_line": 1959
+    },
+    {
+      "sample_id": 88,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2079
+    },
+    {
+      "sample_id": 89,
+      "dataset": "daily_dialog",
+      "jsonl_line": 404
+    },
+    {
+      "sample_id": 90,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3083
+    },
+    {
+      "sample_id": 91,
+      "dataset": "multiwoz21",
+      "jsonl_line": 1752
+    },
+    {
+      "sample_id": 92,
+      "dataset": "daily_dialog",
+      "jsonl_line": 175
+    },
+    {
+      "sample_id": 93,
+      "dataset": "taskmaster2",
+      "jsonl_line": 4088
+    },
+    {
+      "sample_id": 94,
+      "dataset": "taskmaster2",
+      "jsonl_line": 3961
+    },
+    {
+      "sample_id": 95,
+      "dataset": "multiwoz21",
+      "jsonl_line": 1955
+    },
+    {
+      "sample_id": 96,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2264
+    },
+    {
+      "sample_id": 97,
+      "dataset": "daily_dialog",
+      "jsonl_line": 477
+    },
+    {
+      "sample_id": 98,
+      "dataset": "taskmaster3",
+      "jsonl_line": 4655
+    },
+    {
+      "sample_id": 99,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3184
+    },
+    {
+      "sample_id": 100,
+      "dataset": "taskmaster3",
+      "jsonl_line": 5315
+    },
+    {
+      "sample_id": 101,
+      "dataset": "ccpe",
+      "jsonl_line": 2891
+    },
+    {
+      "sample_id": 102,
+      "dataset": "daily_dialog",
+      "jsonl_line": 138
+    },
+    {
+      "sample_id": 103,
+      "dataset": "taskmaster3",
+      "jsonl_line": 4363
+    },
+    {
+      "sample_id": 104,
+      "dataset": "taskmaster2",
+      "jsonl_line": 3930
+    },
+    {
+      "sample_id": 105,
+      "dataset": "taskmaster2",
+      "jsonl_line": 4094
+    },
+    {
+      "sample_id": 106,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2044
+    },
+    {
+      "sample_id": 107,
+      "dataset": "metawoz",
+      "jsonl_line": 6659
+    },
+    {
+      "sample_id": 108,
+      "dataset": "daily_dialog",
+      "jsonl_line": 271
+    },
+    {
+      "sample_id": 109,
+      "dataset": "taskmaster2",
+      "jsonl_line": 3899
+    },
+    {
+      "sample_id": 110,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2018
+    },
+    {
+      "sample_id": 111,
+      "dataset": "daily_dialog",
+      "jsonl_line": 358
+    },
+    {
+      "sample_id": 112,
+      "dataset": "ccpe",
+      "jsonl_line": 2912
+    },
+    {
+      "sample_id": 113,
+      "dataset": "taskmaster2",
+      "jsonl_line": 3960
+    },
+    {
+      "sample_id": 114,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2176
+    },
+    {
+      "sample_id": 115,
+      "dataset": "taskmaster2",
+      "jsonl_line": 3958
+    },
+    {
+      "sample_id": 116,
+      "dataset": "taskmaster2",
+      "jsonl_line": 4018
+    },
+    {
+      "sample_id": 117,
+      "dataset": "daily_dialog",
+      "jsonl_line": 504
+    },
+    {
+      "sample_id": 118,
+      "dataset": "multiwoz21",
+      "jsonl_line": 1917
+    },
+    {
+      "sample_id": 119,
+      "dataset": "taskmaster2",
+      "jsonl_line": 3911
+    },
+    {
+      "sample_id": 120,
+      "dataset": "taskmaster2",
+      "jsonl_line": 3969
+    },
+    {
+      "sample_id": 121,
+      "dataset": "taskmaster2",
+      "jsonl_line": 4111
+    },
+    {
+      "sample_id": 122,
+      "dataset": "daily_dialog",
+      "jsonl_line": 245
+    },
+    {
+      "sample_id": 123,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2317
+    },
+    {
+      "sample_id": 124,
+      "dataset": "taskmaster3",
+      "jsonl_line": 4975
+    },
+    {
+      "sample_id": 125,
+      "dataset": "taskmaster3",
+      "jsonl_line": 4838
+    },
+    {
+      "sample_id": 126,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2544
+    },
+    {
+      "sample_id": 127,
+      "dataset": "taskmaster3",
+      "jsonl_line": 5224
+    },
+    {
+      "sample_id": 128,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3497
+    },
+    {
+      "sample_id": 129,
+      "dataset": "taskmaster2",
+      "jsonl_line": 4059
+    },
+    {
+      "sample_id": 130,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3105
+    },
+    {
+      "sample_id": 131,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2575
+    },
+    {
+      "sample_id": 132,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3197
+    },
+    {
+      "sample_id": 133,
+      "dataset": "taskmaster3",
+      "jsonl_line": 5072
+    },
+    {
+      "sample_id": 134,
+      "dataset": "multiwoz21",
+      "jsonl_line": 1715
+    },
+    {
+      "sample_id": 135,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2284
+    },
+    {
+      "sample_id": 136,
+      "dataset": "taskmaster2",
+      "jsonl_line": 3896
+    },
+    {
+      "sample_id": 137,
+      "dataset": "ccpe",
+      "jsonl_line": 2915
+    },
+    {
+      "sample_id": 138,
+      "dataset": "ccpe",
+      "jsonl_line": 2903
+    },
+    {
+      "sample_id": 139,
+      "dataset": "ccpe",
+      "jsonl_line": 2901
+    },
+    {
+      "sample_id": 140,
+      "dataset": "taskmaster2",
+      "jsonl_line": 4169
+    },
+    {
+      "sample_id": 141,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3728
+    },
+    {
+      "sample_id": 142,
+      "dataset": "ccpe",
+      "jsonl_line": 2892
+    },
+    {
+      "sample_id": 143,
+      "dataset": "taskmaster3",
+      "jsonl_line": 4190
+    },
+    {
+      "sample_id": 144,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2282
+    },
+    {
+      "sample_id": 145,
+      "dataset": "ccpe",
+      "jsonl_line": 2885
+    },
+    {
+      "sample_id": 146,
+      "dataset": "taskmaster3",
+      "jsonl_line": 5717
+    },
+    {
+      "sample_id": 147,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3066
+    },
+    {
+      "sample_id": 148,
+      "dataset": "taskmaster1",
+      "jsonl_line": 2992
+    },
+    {
+      "sample_id": 149,
+      "dataset": "taskmaster3",
+      "jsonl_line": 4765
+    },
+    {
+      "sample_id": 150,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3684
+    },
+    {
+      "sample_id": 151,
+      "dataset": "ccpe",
+      "jsonl_line": 2906
+    },
+    {
+      "sample_id": 152,
+      "dataset": "ccpe",
+      "jsonl_line": 2909
+    },
+    {
+      "sample_id": 153,
+      "dataset": "daily_dialog",
+      "jsonl_line": 484
+    },
+    {
+      "sample_id": 154,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3273
+    },
+    {
+      "sample_id": 155,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3796
+    },
+    {
+      "sample_id": 156,
+      "dataset": "ccpe",
+      "jsonl_line": 2895
+    },
+    {
+      "sample_id": 157,
+      "dataset": "multiwoz21",
+      "jsonl_line": 1759
+    },
+    {
+      "sample_id": 158,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2467
+    },
+    {
+      "sample_id": 159,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3494
+    },
+    {
+      "sample_id": 160,
+      "dataset": "taskmaster3",
+      "jsonl_line": 5387
+    },
+    {
+      "sample_id": 161,
+      "dataset": "daily_dialog",
+      "jsonl_line": 646
+    },
+    {
+      "sample_id": 162,
+      "dataset": "taskmaster2",
+      "jsonl_line": 4161
+    },
+    {
+      "sample_id": 163,
+      "dataset": "personachat",
+      "jsonl_line": 1360
+    },
+    {
+      "sample_id": 164,
+      "dataset": "taskmaster2",
+      "jsonl_line": 4113
+    },
+    {
+      "sample_id": 165,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3559
+    },
+    {
+      "sample_id": 166,
+      "dataset": "ccpe",
+      "jsonl_line": 2920
+    },
+    {
+      "sample_id": 167,
+      "dataset": "daily_dialog",
+      "jsonl_line": 81
+    },
+    {
+      "sample_id": 168,
+      "dataset": "taskmaster2",
+      "jsonl_line": 3985
+    },
+    {
+      "sample_id": 169,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3230
+    },
+    {
+      "sample_id": 170,
+      "dataset": "ccpe",
+      "jsonl_line": 2890
+    },
+    {
+      "sample_id": 171,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3782
+    },
+    {
+      "sample_id": 172,
+      "dataset": "multiwoz21",
+      "jsonl_line": 1937
+    },
+    {
+      "sample_id": 173,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3746
+    },
+    {
+      "sample_id": 174,
+      "dataset": "taskmaster2",
+      "jsonl_line": 4033
+    },
+    {
+      "sample_id": 175,
+      "dataset": "ccpe",
+      "jsonl_line": 2898
+    },
+    {
+      "sample_id": 176,
+      "dataset": "ccpe",
+      "jsonl_line": 2883
+    },
+    {
+      "sample_id": 177,
+      "dataset": "taskmaster1",
+      "jsonl_line": 2934
+    },
+    {
+      "sample_id": 178,
+      "dataset": "multiwoz21",
+      "jsonl_line": 1889
+    },
+    {
+      "sample_id": 179,
+      "dataset": "taskmaster3",
+      "jsonl_line": 5198
+    },
+    {
+      "sample_id": 180,
+      "dataset": "multiwoz21",
+      "jsonl_line": 2489
+    },
+    {
+      "sample_id": 181,
+      "dataset": "taskmaster2",
+      "jsonl_line": 4008
+    },
+    {
+      "sample_id": 182,
+      "dataset": "daily_dialog",
+      "jsonl_line": 498
+    },
+    {
+      "sample_id": 183,
+      "dataset": "taskmaster1",
+      "jsonl_line": 3012
+    }
+  ],
+  "measurements": [
+    {
+      "repeat": 1,
+      "sample_id": 0,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.562349,
+      "ts_probability": 8.673759488431187e-09
+    },
+    {
+      "repeat": 1,
+      "sample_id": 1,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.104284,
+      "ts_probability": 0.0019179062219336629
+    },
+    {
+      "repeat": 1,
+      "sample_id": 2,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.819693,
+      "ts_probability": 0.014662561938166618
+    },
+    {
+      "repeat": 1,
+      "sample_id": 3,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.300515,
+      "ts_probability": 1.9549845546862343e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 4,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.628889,
+      "ts_probability": 0.0011547734029591084
+    },
+    {
+      "repeat": 1,
+      "sample_id": 5,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.638486,
+      "ts_probability": 9.226616384694353e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 6,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.421111,
+      "ts_probability": 0.0018448265036568046
+    },
+    {
+      "repeat": 1,
+      "sample_id": 7,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.558135,
+      "ts_probability": 3.3641181507171325e-10
+    },
+    {
+      "repeat": 1,
+      "sample_id": 8,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.12375,
+      "ts_probability": 9.20791644603014e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 9,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.956853,
+      "ts_probability": 1.1358390565874288e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 10,
+      "dataset": "ccpe",
+      "latency_ms": 12.496538,
+      "ts_probability": 0.0004587557341437787
+    },
+    {
+      "repeat": 1,
+      "sample_id": 11,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.133142,
+      "ts_probability": 0.00011119054397568107
+    },
+    {
+      "repeat": 1,
+      "sample_id": 12,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.331262,
+      "ts_probability": 2.136303223210234e-08
+    },
+    {
+      "repeat": 1,
+      "sample_id": 13,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.07059,
+      "ts_probability": 0.0001866165839601308
+    },
+    {
+      "repeat": 1,
+      "sample_id": 14,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.955758,
+      "ts_probability": 0.000992557150311768
+    },
+    {
+      "repeat": 1,
+      "sample_id": 15,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.337139,
+      "ts_probability": 0.2821151316165924
+    },
+    {
+      "repeat": 1,
+      "sample_id": 16,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.181061,
+      "ts_probability": 2.4771530604539294e-08
+    },
+    {
+      "repeat": 1,
+      "sample_id": 17,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.447698,
+      "ts_probability": 7.042873039608821e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 18,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.930498,
+      "ts_probability": 0.12860345840454102
+    },
+    {
+      "repeat": 1,
+      "sample_id": 19,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.950347,
+      "ts_probability": 0.0001000162010313943
+    },
+    {
+      "repeat": 1,
+      "sample_id": 20,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.201784,
+      "ts_probability": 0.1549302339553833
+    },
+    {
+      "repeat": 1,
+      "sample_id": 21,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.455077,
+      "ts_probability": 5.247182244261239e-09
+    },
+    {
+      "repeat": 1,
+      "sample_id": 22,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.390962,
+      "ts_probability": 0.4010712504386902
+    },
+    {
+      "repeat": 1,
+      "sample_id": 23,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.298278,
+      "ts_probability": 0.5105084776878357
+    },
+    {
+      "repeat": 1,
+      "sample_id": 24,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.940183,
+      "ts_probability": 5.298332325764932e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 25,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.257811,
+      "ts_probability": 0.07474493980407715
+    },
+    {
+      "repeat": 1,
+      "sample_id": 26,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.801533,
+      "ts_probability": 0.0011808420531451702
+    },
+    {
+      "repeat": 1,
+      "sample_id": 27,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.965197,
+      "ts_probability": 0.0008436618954874575
+    },
+    {
+      "repeat": 1,
+      "sample_id": 28,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.12837,
+      "ts_probability": 0.27759677171707153
+    },
+    {
+      "repeat": 1,
+      "sample_id": 29,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.653334,
+      "ts_probability": 0.0005575381219387054
+    },
+    {
+      "repeat": 1,
+      "sample_id": 30,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.217087,
+      "ts_probability": 0.0010842321207746863
+    },
+    {
+      "repeat": 1,
+      "sample_id": 31,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.125551,
+      "ts_probability": 0.006889291573315859
+    },
+    {
+      "repeat": 1,
+      "sample_id": 32,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.395993,
+      "ts_probability": 0.14416123926639557
+    },
+    {
+      "repeat": 1,
+      "sample_id": 33,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.284472,
+      "ts_probability": 0.0039427559822797775
+    },
+    {
+      "repeat": 1,
+      "sample_id": 34,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.816711,
+      "ts_probability": 0.0010947531554847956
+    },
+    {
+      "repeat": 1,
+      "sample_id": 35,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.653232,
+      "ts_probability": 9.46522231970448e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 36,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.455143,
+      "ts_probability": 2.558267988206353e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 37,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.559944,
+      "ts_probability": 8.319785411003977e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 38,
+      "dataset": "ccpe",
+      "latency_ms": 12.089371,
+      "ts_probability": 0.0045170565135777
+    },
+    {
+      "repeat": 1,
+      "sample_id": 39,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.621869,
+      "ts_probability": 0.0007226414745673537
+    },
+    {
+      "repeat": 1,
+      "sample_id": 40,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.973042,
+      "ts_probability": 0.00018023858137894422
+    },
+    {
+      "repeat": 1,
+      "sample_id": 41,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.513611,
+      "ts_probability": 0.0003512113180477172
+    },
+    {
+      "repeat": 1,
+      "sample_id": 42,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.009751,
+      "ts_probability": 0.00042692365241236985
+    },
+    {
+      "repeat": 1,
+      "sample_id": 43,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.844757,
+      "ts_probability": 0.44578924775123596
+    },
+    {
+      "repeat": 1,
+      "sample_id": 44,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.642977,
+      "ts_probability": 3.0130770028335974e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 45,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.116402,
+      "ts_probability": 0.0002722053322941065
+    },
+    {
+      "repeat": 1,
+      "sample_id": 46,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.416991,
+      "ts_probability": 2.9879247449571267e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 47,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.233073,
+      "ts_probability": 0.000125447942991741
+    },
+    {
+      "repeat": 1,
+      "sample_id": 48,
+      "dataset": "ccpe",
+      "latency_ms": 13.07642,
+      "ts_probability": 9.174676961265504e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 49,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.951966,
+      "ts_probability": 0.5970635414123535
+    },
+    {
+      "repeat": 1,
+      "sample_id": 50,
+      "dataset": "personachat",
+      "latency_ms": 12.432064,
+      "ts_probability": 0.028431519865989685
+    },
+    {
+      "repeat": 1,
+      "sample_id": 51,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.851484,
+      "ts_probability": 8.784172678133473e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 52,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.8023,
+      "ts_probability": 3.421786823309958e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 53,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.424328,
+      "ts_probability": 0.14550822973251343
+    },
+    {
+      "repeat": 1,
+      "sample_id": 54,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.388316,
+      "ts_probability": 7.801825745445967e-07
+    },
+    {
+      "repeat": 1,
+      "sample_id": 55,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.103341,
+      "ts_probability": 1.7465814380557276e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 56,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.75906,
+      "ts_probability": 5.767180482507683e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 57,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.63349,
+      "ts_probability": 0.004858838394284248
+    },
+    {
+      "repeat": 1,
+      "sample_id": 58,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.649619,
+      "ts_probability": 0.16399888694286346
+    },
+    {
+      "repeat": 1,
+      "sample_id": 59,
+      "dataset": "ccpe",
+      "latency_ms": 13.555131,
+      "ts_probability": 0.6748192310333252
+    },
+    {
+      "repeat": 1,
+      "sample_id": 60,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.741583,
+      "ts_probability": 5.1925049774581566e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 61,
+      "dataset": "ccpe",
+      "latency_ms": 13.412322,
+      "ts_probability": 0.017475072294473648
+    },
+    {
+      "repeat": 1,
+      "sample_id": 62,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.898029,
+      "ts_probability": 4.778696165885776e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 63,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.793021,
+      "ts_probability": 1.1036666364816483e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 64,
+      "dataset": "taskmaster3",
+      "latency_ms": 14.027119,
+      "ts_probability": 0.6881327033042908
+    },
+    {
+      "repeat": 1,
+      "sample_id": 65,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.894649,
+      "ts_probability": 0.00019292016804683954
+    },
+    {
+      "repeat": 1,
+      "sample_id": 66,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.685916,
+      "ts_probability": 0.29041773080825806
+    },
+    {
+      "repeat": 1,
+      "sample_id": 67,
+      "dataset": "taskmaster3",
+      "latency_ms": 14.157213,
+      "ts_probability": 1.537645601956683e-07
+    },
+    {
+      "repeat": 1,
+      "sample_id": 68,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.62656,
+      "ts_probability": 7.903019286459312e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 69,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.803572,
+      "ts_probability": 0.1372864842414856
+    },
+    {
+      "repeat": 1,
+      "sample_id": 70,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.503485,
+      "ts_probability": 0.0004424240323714912
+    },
+    {
+      "repeat": 1,
+      "sample_id": 71,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.701131,
+      "ts_probability": 0.0007614569622091949
+    },
+    {
+      "repeat": 1,
+      "sample_id": 72,
+      "dataset": "daily_dialog",
+      "latency_ms": 14.011232,
+      "ts_probability": 0.0004653965588659048
+    },
+    {
+      "repeat": 1,
+      "sample_id": 73,
+      "dataset": "ccpe",
+      "latency_ms": 13.693636,
+      "ts_probability": 0.017822081223130226
+    },
+    {
+      "repeat": 1,
+      "sample_id": 74,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.503572,
+      "ts_probability": 2.1869288957532262e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 75,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.258486,
+      "ts_probability": 3.403597190754226e-07
+    },
+    {
+      "repeat": 1,
+      "sample_id": 76,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.313295,
+      "ts_probability": 0.6100403070449829
+    },
+    {
+      "repeat": 1,
+      "sample_id": 77,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.10447,
+      "ts_probability": 2.5556525997671997e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 78,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.788426,
+      "ts_probability": 0.0007955881883390248
+    },
+    {
+      "repeat": 1,
+      "sample_id": 79,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.522523,
+      "ts_probability": 4.953255483997054e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 80,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.836387,
+      "ts_probability": 1.3572120224125683e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 81,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.068768,
+      "ts_probability": 0.00031331958598457277
+    },
+    {
+      "repeat": 1,
+      "sample_id": 82,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.832416,
+      "ts_probability": 0.00043066448415629566
+    },
+    {
+      "repeat": 1,
+      "sample_id": 83,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.016176,
+      "ts_probability": 0.00036153150722384453
+    },
+    {
+      "repeat": 1,
+      "sample_id": 84,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.368323,
+      "ts_probability": 9.905873412208166e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 85,
+      "dataset": "taskmaster3",
+      "latency_ms": 14.779956,
+      "ts_probability": 2.8247625323274406e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 86,
+      "dataset": "ccpe",
+      "latency_ms": 13.053257,
+      "ts_probability": 3.4985837373824324e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 87,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.733129,
+      "ts_probability": 0.7013221979141235
+    },
+    {
+      "repeat": 1,
+      "sample_id": 88,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.337853,
+      "ts_probability": 4.597620136337355e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 89,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.036119,
+      "ts_probability": 0.0018293214961886406
+    },
+    {
+      "repeat": 1,
+      "sample_id": 90,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.068622,
+      "ts_probability": 0.0001881304633570835
+    },
+    {
+      "repeat": 1,
+      "sample_id": 91,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.664043,
+      "ts_probability": 0.002070328453555703
+    },
+    {
+      "repeat": 1,
+      "sample_id": 92,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.398032,
+      "ts_probability": 0.00025999691570177674
+    },
+    {
+      "repeat": 1,
+      "sample_id": 93,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.814485,
+      "ts_probability": 0.00010662378190318123
+    },
+    {
+      "repeat": 1,
+      "sample_id": 94,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.273626,
+      "ts_probability": 3.3553220418980345e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 95,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.080265,
+      "ts_probability": 0.5890234708786011
+    },
+    {
+      "repeat": 1,
+      "sample_id": 96,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.340953,
+      "ts_probability": 0.4258824288845062
+    },
+    {
+      "repeat": 1,
+      "sample_id": 97,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.981707,
+      "ts_probability": 0.0008805334218777716
+    },
+    {
+      "repeat": 1,
+      "sample_id": 98,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.90063,
+      "ts_probability": 1.196944054981941e-07
+    },
+    {
+      "repeat": 1,
+      "sample_id": 99,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.135871,
+      "ts_probability": 0.009513398632407188
+    },
+    {
+      "repeat": 1,
+      "sample_id": 100,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.802395,
+      "ts_probability": 5.617681745206937e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 101,
+      "dataset": "ccpe",
+      "latency_ms": 12.300944,
+      "ts_probability": 0.0003825013991445303
+    },
+    {
+      "repeat": 1,
+      "sample_id": 102,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.106217,
+      "ts_probability": 0.0014271901454776525
+    },
+    {
+      "repeat": 1,
+      "sample_id": 103,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.591294,
+      "ts_probability": 0.010861367918550968
+    },
+    {
+      "repeat": 1,
+      "sample_id": 104,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.710545,
+      "ts_probability": 0.0013569053262472153
+    },
+    {
+      "repeat": 1,
+      "sample_id": 105,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.006924,
+      "ts_probability": 0.002822192618623376
+    },
+    {
+      "repeat": 1,
+      "sample_id": 106,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.487407,
+      "ts_probability": 1.003802208288107e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 107,
+      "dataset": "metawoz",
+      "latency_ms": 12.244823,
+      "ts_probability": 0.0006159613258205354
+    },
+    {
+      "repeat": 1,
+      "sample_id": 108,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.859891,
+      "ts_probability": 0.00269553461112082
+    },
+    {
+      "repeat": 1,
+      "sample_id": 109,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.648747,
+      "ts_probability": 0.00010790037777042016
+    },
+    {
+      "repeat": 1,
+      "sample_id": 110,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.471211,
+      "ts_probability": 0.0004644494620151818
+    },
+    {
+      "repeat": 1,
+      "sample_id": 111,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.355165,
+      "ts_probability": 0.4447675347328186
+    },
+    {
+      "repeat": 1,
+      "sample_id": 112,
+      "dataset": "ccpe",
+      "latency_ms": 12.797736,
+      "ts_probability": 6.95935750627541e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 113,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.55824,
+      "ts_probability": 0.00010650874173734337
+    },
+    {
+      "repeat": 1,
+      "sample_id": 114,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.139235,
+      "ts_probability": 3.3162425552291097e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 115,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.433364,
+      "ts_probability": 0.010681584477424622
+    },
+    {
+      "repeat": 1,
+      "sample_id": 116,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.951334,
+      "ts_probability": 0.001192491501569748
+    },
+    {
+      "repeat": 1,
+      "sample_id": 117,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.390677,
+      "ts_probability": 0.00035146193113178015
+    },
+    {
+      "repeat": 1,
+      "sample_id": 118,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.468404,
+      "ts_probability": 4.512522355071269e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 119,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.925304,
+      "ts_probability": 0.0018243039958178997
+    },
+    {
+      "repeat": 1,
+      "sample_id": 120,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.381432,
+      "ts_probability": 1.6637151247778093e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 121,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.879459,
+      "ts_probability": 0.0006715605850331485
+    },
+    {
+      "repeat": 1,
+      "sample_id": 122,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.466103,
+      "ts_probability": 0.0003200750215910375
+    },
+    {
+      "repeat": 1,
+      "sample_id": 123,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.604163,
+      "ts_probability": 0.00024282262893393636
+    },
+    {
+      "repeat": 1,
+      "sample_id": 124,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.302455,
+      "ts_probability": 2.34427162126849e-07
+    },
+    {
+      "repeat": 1,
+      "sample_id": 125,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.418786,
+      "ts_probability": 0.008382967673242092
+    },
+    {
+      "repeat": 1,
+      "sample_id": 126,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.705345,
+      "ts_probability": 4.4752625399269164e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 127,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.800046,
+      "ts_probability": 0.0011420297669246793
+    },
+    {
+      "repeat": 1,
+      "sample_id": 128,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.290105,
+      "ts_probability": 0.001115651335567236
+    },
+    {
+      "repeat": 1,
+      "sample_id": 129,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.364805,
+      "ts_probability": 3.306044527562335e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 130,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.067843,
+      "ts_probability": 0.12516610324382782
+    },
+    {
+      "repeat": 1,
+      "sample_id": 131,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.926925,
+      "ts_probability": 0.00011559385166037828
+    },
+    {
+      "repeat": 1,
+      "sample_id": 132,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.929876,
+      "ts_probability": 0.0003738646046258509
+    },
+    {
+      "repeat": 1,
+      "sample_id": 133,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.520938,
+      "ts_probability": 3.0811888791504316e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 134,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.132475,
+      "ts_probability": 6.918659437360475e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 135,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.569784,
+      "ts_probability": 0.2462483048439026
+    },
+    {
+      "repeat": 1,
+      "sample_id": 136,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.686191,
+      "ts_probability": 0.025011077523231506
+    },
+    {
+      "repeat": 1,
+      "sample_id": 137,
+      "dataset": "ccpe",
+      "latency_ms": 13.177675,
+      "ts_probability": 0.00014476141950581223
+    },
+    {
+      "repeat": 1,
+      "sample_id": 138,
+      "dataset": "ccpe",
+      "latency_ms": 13.32699,
+      "ts_probability": 0.0003376767272129655
+    },
+    {
+      "repeat": 1,
+      "sample_id": 139,
+      "dataset": "ccpe",
+      "latency_ms": 13.375819,
+      "ts_probability": 0.00017588245100341737
+    },
+    {
+      "repeat": 1,
+      "sample_id": 140,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.017241,
+      "ts_probability": 0.0004757166316267103
+    },
+    {
+      "repeat": 1,
+      "sample_id": 141,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.59962,
+      "ts_probability": 0.017741531133651733
+    },
+    {
+      "repeat": 1,
+      "sample_id": 142,
+      "dataset": "ccpe",
+      "latency_ms": 13.176485,
+      "ts_probability": 0.00014928686141502112
+    },
+    {
+      "repeat": 1,
+      "sample_id": 143,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.303142,
+      "ts_probability": 0.6654070615768433
+    },
+    {
+      "repeat": 1,
+      "sample_id": 144,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.41724,
+      "ts_probability": 4.248048298904905e-06
+    },
+    {
+      "repeat": 1,
+      "sample_id": 145,
+      "dataset": "ccpe",
+      "latency_ms": 13.552339,
+      "ts_probability": 8.592926315031946e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 146,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.397832,
+      "ts_probability": 8.010358578758314e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 147,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.902364,
+      "ts_probability": 4.792536492459476e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 148,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.508233,
+      "ts_probability": 0.0002990657230839133
+    },
+    {
+      "repeat": 1,
+      "sample_id": 149,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.668884,
+      "ts_probability": 0.0004242699942551553
+    },
+    {
+      "repeat": 1,
+      "sample_id": 150,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.505866,
+      "ts_probability": 0.0006049445946700871
+    },
+    {
+      "repeat": 1,
+      "sample_id": 151,
+      "dataset": "ccpe",
+      "latency_ms": 13.251065,
+      "ts_probability": 4.514553802437149e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 152,
+      "dataset": "ccpe",
+      "latency_ms": 13.25776,
+      "ts_probability": 0.00037574046291410923
+    },
+    {
+      "repeat": 1,
+      "sample_id": 153,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.372263,
+      "ts_probability": 0.0022569941356778145
+    },
+    {
+      "repeat": 1,
+      "sample_id": 154,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.49053,
+      "ts_probability": 0.44492363929748535
+    },
+    {
+      "repeat": 1,
+      "sample_id": 155,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.747902,
+      "ts_probability": 0.00029421583167277277
+    },
+    {
+      "repeat": 1,
+      "sample_id": 156,
+      "dataset": "ccpe",
+      "latency_ms": 13.166564,
+      "ts_probability": 0.00510167283937335
+    },
+    {
+      "repeat": 1,
+      "sample_id": 157,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.10784,
+      "ts_probability": 0.0002752291620709002
+    },
+    {
+      "repeat": 1,
+      "sample_id": 158,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.347343,
+      "ts_probability": 1.7742924683261663e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 159,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.323684,
+      "ts_probability": 1.281157437915681e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 160,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.754665,
+      "ts_probability": 4.510328290052712e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 161,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.67695,
+      "ts_probability": 3.9052105421433225e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 162,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.112791,
+      "ts_probability": 7.733696111245081e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 163,
+      "dataset": "personachat",
+      "latency_ms": 12.477129,
+      "ts_probability": 0.0001459146005799994
+    },
+    {
+      "repeat": 1,
+      "sample_id": 164,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.661145,
+      "ts_probability": 0.32385897636413574
+    },
+    {
+      "repeat": 1,
+      "sample_id": 165,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.797402,
+      "ts_probability": 0.40555447340011597
+    },
+    {
+      "repeat": 1,
+      "sample_id": 166,
+      "dataset": "ccpe",
+      "latency_ms": 12.000426,
+      "ts_probability": 0.0003534363058861345
+    },
+    {
+      "repeat": 1,
+      "sample_id": 167,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.962437,
+      "ts_probability": 0.5311324596405029
+    },
+    {
+      "repeat": 1,
+      "sample_id": 168,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.703245,
+      "ts_probability": 0.0012046097544953227
+    },
+    {
+      "repeat": 1,
+      "sample_id": 169,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.909245,
+      "ts_probability": 0.012737984769046307
+    },
+    {
+      "repeat": 1,
+      "sample_id": 170,
+      "dataset": "ccpe",
+      "latency_ms": 11.395798,
+      "ts_probability": 0.0003304375568404794
+    },
+    {
+      "repeat": 1,
+      "sample_id": 171,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.344679,
+      "ts_probability": 0.5596656799316406
+    },
+    {
+      "repeat": 1,
+      "sample_id": 172,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.603587,
+      "ts_probability": 0.11061345040798187
+    },
+    {
+      "repeat": 1,
+      "sample_id": 173,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.126656,
+      "ts_probability": 0.0006183426594361663
+    },
+    {
+      "repeat": 1,
+      "sample_id": 174,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.49295,
+      "ts_probability": 0.015360635705292225
+    },
+    {
+      "repeat": 1,
+      "sample_id": 175,
+      "dataset": "ccpe",
+      "latency_ms": 11.517952,
+      "ts_probability": 0.00022192823234945536
+    },
+    {
+      "repeat": 1,
+      "sample_id": 176,
+      "dataset": "ccpe",
+      "latency_ms": 11.777544,
+      "ts_probability": 7.841547630960122e-05
+    },
+    {
+      "repeat": 1,
+      "sample_id": 177,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.091139,
+      "ts_probability": 0.00026956619694828987
+    },
+    {
+      "repeat": 1,
+      "sample_id": 178,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.520134,
+      "ts_probability": 0.005142323672771454
+    },
+    {
+      "repeat": 1,
+      "sample_id": 179,
+      "dataset": "taskmaster3",
+      "latency_ms": 10.957898,
+      "ts_probability": 0.1671164482831955
+    },
+    {
+      "repeat": 1,
+      "sample_id": 180,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.426546,
+      "ts_probability": 6.878970566503995e-07
+    },
+    {
+      "repeat": 1,
+      "sample_id": 181,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.62676,
+      "ts_probability": 0.8524234890937805
+    },
+    {
+      "repeat": 1,
+      "sample_id": 182,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.320514,
+      "ts_probability": 0.00015675356553401798
+    },
+    {
+      "repeat": 1,
+      "sample_id": 183,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.358396,
+      "ts_probability": 8.476340735796839e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 0,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.45353,
+      "ts_probability": 8.673759488431187e-09
+    },
+    {
+      "repeat": 2,
+      "sample_id": 1,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.197298,
+      "ts_probability": 0.0019179062219336629
+    },
+    {
+      "repeat": 2,
+      "sample_id": 2,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.410044,
+      "ts_probability": 0.014662561938166618
+    },
+    {
+      "repeat": 2,
+      "sample_id": 3,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.43743,
+      "ts_probability": 1.9549845546862343e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 4,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.914532,
+      "ts_probability": 0.0011547734029591084
+    },
+    {
+      "repeat": 2,
+      "sample_id": 5,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.395973,
+      "ts_probability": 9.226616384694353e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 6,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.417008,
+      "ts_probability": 0.0018448265036568046
+    },
+    {
+      "repeat": 2,
+      "sample_id": 7,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.254021,
+      "ts_probability": 3.3641181507171325e-10
+    },
+    {
+      "repeat": 2,
+      "sample_id": 8,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.464982,
+      "ts_probability": 9.20791644603014e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 9,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.123474,
+      "ts_probability": 1.1358390565874288e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 10,
+      "dataset": "ccpe",
+      "latency_ms": 12.888806,
+      "ts_probability": 0.0004587557341437787
+    },
+    {
+      "repeat": 2,
+      "sample_id": 11,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.053966,
+      "ts_probability": 0.00011119054397568107
+    },
+    {
+      "repeat": 2,
+      "sample_id": 12,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.043127,
+      "ts_probability": 2.136303223210234e-08
+    },
+    {
+      "repeat": 2,
+      "sample_id": 13,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.683271,
+      "ts_probability": 0.0001866165839601308
+    },
+    {
+      "repeat": 2,
+      "sample_id": 14,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.01186,
+      "ts_probability": 0.000992557150311768
+    },
+    {
+      "repeat": 2,
+      "sample_id": 15,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.82458,
+      "ts_probability": 0.2821151316165924
+    },
+    {
+      "repeat": 2,
+      "sample_id": 16,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.147271,
+      "ts_probability": 2.4771530604539294e-08
+    },
+    {
+      "repeat": 2,
+      "sample_id": 17,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.350395,
+      "ts_probability": 7.042873039608821e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 18,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.233786,
+      "ts_probability": 0.12860345840454102
+    },
+    {
+      "repeat": 2,
+      "sample_id": 19,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.161878,
+      "ts_probability": 0.0001000162010313943
+    },
+    {
+      "repeat": 2,
+      "sample_id": 20,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.397227,
+      "ts_probability": 0.1549302339553833
+    },
+    {
+      "repeat": 2,
+      "sample_id": 21,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.973292,
+      "ts_probability": 5.247182244261239e-09
+    },
+    {
+      "repeat": 2,
+      "sample_id": 22,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.737024,
+      "ts_probability": 0.4010712504386902
+    },
+    {
+      "repeat": 2,
+      "sample_id": 23,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.818564,
+      "ts_probability": 0.5105084776878357
+    },
+    {
+      "repeat": 2,
+      "sample_id": 24,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.180518,
+      "ts_probability": 5.298332325764932e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 25,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.146676,
+      "ts_probability": 0.07474493980407715
+    },
+    {
+      "repeat": 2,
+      "sample_id": 26,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.149591,
+      "ts_probability": 0.0011808420531451702
+    },
+    {
+      "repeat": 2,
+      "sample_id": 27,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.669912,
+      "ts_probability": 0.0008436618954874575
+    },
+    {
+      "repeat": 2,
+      "sample_id": 28,
+      "dataset": "daily_dialog",
+      "latency_ms": 10.953157,
+      "ts_probability": 0.27759677171707153
+    },
+    {
+      "repeat": 2,
+      "sample_id": 29,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.712348,
+      "ts_probability": 0.0005575381219387054
+    },
+    {
+      "repeat": 2,
+      "sample_id": 30,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.162378,
+      "ts_probability": 0.0010842321207746863
+    },
+    {
+      "repeat": 2,
+      "sample_id": 31,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.0557,
+      "ts_probability": 0.006889291573315859
+    },
+    {
+      "repeat": 2,
+      "sample_id": 32,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.77224,
+      "ts_probability": 0.14416123926639557
+    },
+    {
+      "repeat": 2,
+      "sample_id": 33,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.679744,
+      "ts_probability": 0.0039427559822797775
+    },
+    {
+      "repeat": 2,
+      "sample_id": 34,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.205688,
+      "ts_probability": 0.0010947531554847956
+    },
+    {
+      "repeat": 2,
+      "sample_id": 35,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.590058,
+      "ts_probability": 9.46522231970448e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 36,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.090251,
+      "ts_probability": 2.558267988206353e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 37,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.537847,
+      "ts_probability": 8.319785411003977e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 38,
+      "dataset": "ccpe",
+      "latency_ms": 12.106515,
+      "ts_probability": 0.0045170565135777
+    },
+    {
+      "repeat": 2,
+      "sample_id": 39,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.766586,
+      "ts_probability": 0.0007226414745673537
+    },
+    {
+      "repeat": 2,
+      "sample_id": 40,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.327083,
+      "ts_probability": 0.00018023858137894422
+    },
+    {
+      "repeat": 2,
+      "sample_id": 41,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.967929,
+      "ts_probability": 0.0003512113180477172
+    },
+    {
+      "repeat": 2,
+      "sample_id": 42,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.68771,
+      "ts_probability": 0.00042692365241236985
+    },
+    {
+      "repeat": 2,
+      "sample_id": 43,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.095317,
+      "ts_probability": 0.44578924775123596
+    },
+    {
+      "repeat": 2,
+      "sample_id": 44,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.454617,
+      "ts_probability": 3.0130770028335974e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 45,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.369115,
+      "ts_probability": 0.0002722053322941065
+    },
+    {
+      "repeat": 2,
+      "sample_id": 46,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.509892,
+      "ts_probability": 2.9879247449571267e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 47,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.993987,
+      "ts_probability": 0.000125447942991741
+    },
+    {
+      "repeat": 2,
+      "sample_id": 48,
+      "dataset": "ccpe",
+      "latency_ms": 12.169426,
+      "ts_probability": 9.174676961265504e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 49,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.160625,
+      "ts_probability": 0.5970635414123535
+    },
+    {
+      "repeat": 2,
+      "sample_id": 50,
+      "dataset": "personachat",
+      "latency_ms": 12.401981,
+      "ts_probability": 0.028431519865989685
+    },
+    {
+      "repeat": 2,
+      "sample_id": 51,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.413953,
+      "ts_probability": 8.784172678133473e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 52,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.042093,
+      "ts_probability": 3.421786823309958e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 53,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.834879,
+      "ts_probability": 0.14550822973251343
+    },
+    {
+      "repeat": 2,
+      "sample_id": 54,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.208944,
+      "ts_probability": 7.801825745445967e-07
+    },
+    {
+      "repeat": 2,
+      "sample_id": 55,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.246605,
+      "ts_probability": 1.7465814380557276e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 56,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.49504,
+      "ts_probability": 5.767180482507683e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 57,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.579741,
+      "ts_probability": 0.004858838394284248
+    },
+    {
+      "repeat": 2,
+      "sample_id": 58,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.474979,
+      "ts_probability": 0.16399888694286346
+    },
+    {
+      "repeat": 2,
+      "sample_id": 59,
+      "dataset": "ccpe",
+      "latency_ms": 13.011293,
+      "ts_probability": 0.6748192310333252
+    },
+    {
+      "repeat": 2,
+      "sample_id": 60,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.988154,
+      "ts_probability": 5.1925049774581566e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 61,
+      "dataset": "ccpe",
+      "latency_ms": 13.013353,
+      "ts_probability": 0.017475072294473648
+    },
+    {
+      "repeat": 2,
+      "sample_id": 62,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.374306,
+      "ts_probability": 4.778696165885776e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 63,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.723365,
+      "ts_probability": 1.1036666364816483e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 64,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.900527,
+      "ts_probability": 0.6881327033042908
+    },
+    {
+      "repeat": 2,
+      "sample_id": 65,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.491472,
+      "ts_probability": 0.00019292016804683954
+    },
+    {
+      "repeat": 2,
+      "sample_id": 66,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.65411,
+      "ts_probability": 0.29041773080825806
+    },
+    {
+      "repeat": 2,
+      "sample_id": 67,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.468703,
+      "ts_probability": 1.537645601956683e-07
+    },
+    {
+      "repeat": 2,
+      "sample_id": 68,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.481766,
+      "ts_probability": 7.903019286459312e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 69,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.53656,
+      "ts_probability": 0.1372864842414856
+    },
+    {
+      "repeat": 2,
+      "sample_id": 70,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.328561,
+      "ts_probability": 0.0004424240323714912
+    },
+    {
+      "repeat": 2,
+      "sample_id": 71,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.472807,
+      "ts_probability": 0.0007614569622091949
+    },
+    {
+      "repeat": 2,
+      "sample_id": 72,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.365815,
+      "ts_probability": 0.0004653965588659048
+    },
+    {
+      "repeat": 2,
+      "sample_id": 73,
+      "dataset": "ccpe",
+      "latency_ms": 13.092968,
+      "ts_probability": 0.017822081223130226
+    },
+    {
+      "repeat": 2,
+      "sample_id": 74,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.249319,
+      "ts_probability": 2.1869288957532262e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 75,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.060841,
+      "ts_probability": 3.403597190754226e-07
+    },
+    {
+      "repeat": 2,
+      "sample_id": 76,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.039863,
+      "ts_probability": 0.6100403070449829
+    },
+    {
+      "repeat": 2,
+      "sample_id": 77,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.094335,
+      "ts_probability": 2.5556525997671997e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 78,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.509082,
+      "ts_probability": 0.0007955881883390248
+    },
+    {
+      "repeat": 2,
+      "sample_id": 79,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.960515,
+      "ts_probability": 4.953255483997054e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 80,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.133408,
+      "ts_probability": 1.3572120224125683e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 81,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.962134,
+      "ts_probability": 0.00031331958598457277
+    },
+    {
+      "repeat": 2,
+      "sample_id": 82,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.81403,
+      "ts_probability": 0.00043066448415629566
+    },
+    {
+      "repeat": 2,
+      "sample_id": 83,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.311826,
+      "ts_probability": 0.00036153150722384453
+    },
+    {
+      "repeat": 2,
+      "sample_id": 84,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.1063,
+      "ts_probability": 9.905873412208166e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 85,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.19633,
+      "ts_probability": 2.8247625323274406e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 86,
+      "dataset": "ccpe",
+      "latency_ms": 13.224286,
+      "ts_probability": 3.4985837373824324e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 87,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.208091,
+      "ts_probability": 0.7013221979141235
+    },
+    {
+      "repeat": 2,
+      "sample_id": 88,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.621445,
+      "ts_probability": 4.597620136337355e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 89,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.445014,
+      "ts_probability": 0.0018293214961886406
+    },
+    {
+      "repeat": 2,
+      "sample_id": 90,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.739969,
+      "ts_probability": 0.0001881304633570835
+    },
+    {
+      "repeat": 2,
+      "sample_id": 91,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.246834,
+      "ts_probability": 0.002070328453555703
+    },
+    {
+      "repeat": 2,
+      "sample_id": 92,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.122353,
+      "ts_probability": 0.00025999691570177674
+    },
+    {
+      "repeat": 2,
+      "sample_id": 93,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.121011,
+      "ts_probability": 0.00010662378190318123
+    },
+    {
+      "repeat": 2,
+      "sample_id": 94,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.61758,
+      "ts_probability": 3.3553220418980345e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 95,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.4591,
+      "ts_probability": 0.5890234708786011
+    },
+    {
+      "repeat": 2,
+      "sample_id": 96,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.361315,
+      "ts_probability": 0.4258824288845062
+    },
+    {
+      "repeat": 2,
+      "sample_id": 97,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.992719,
+      "ts_probability": 0.0008805334218777716
+    },
+    {
+      "repeat": 2,
+      "sample_id": 98,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.497217,
+      "ts_probability": 1.196944054981941e-07
+    },
+    {
+      "repeat": 2,
+      "sample_id": 99,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.076885,
+      "ts_probability": 0.009513398632407188
+    },
+    {
+      "repeat": 2,
+      "sample_id": 100,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.527104,
+      "ts_probability": 5.617681745206937e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 101,
+      "dataset": "ccpe",
+      "latency_ms": 12.384408,
+      "ts_probability": 0.0003825013991445303
+    },
+    {
+      "repeat": 2,
+      "sample_id": 102,
+      "dataset": "daily_dialog",
+      "latency_ms": 15.263379,
+      "ts_probability": 0.0014271901454776525
+    },
+    {
+      "repeat": 2,
+      "sample_id": 103,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.447435,
+      "ts_probability": 0.010861367918550968
+    },
+    {
+      "repeat": 2,
+      "sample_id": 104,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.35237,
+      "ts_probability": 0.0013569053262472153
+    },
+    {
+      "repeat": 2,
+      "sample_id": 105,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.784834,
+      "ts_probability": 0.002822192618623376
+    },
+    {
+      "repeat": 2,
+      "sample_id": 106,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.418188,
+      "ts_probability": 1.003802208288107e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 107,
+      "dataset": "metawoz",
+      "latency_ms": 11.773755,
+      "ts_probability": 0.0006159613258205354
+    },
+    {
+      "repeat": 2,
+      "sample_id": 108,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.464467,
+      "ts_probability": 0.00269553461112082
+    },
+    {
+      "repeat": 2,
+      "sample_id": 109,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.286966,
+      "ts_probability": 0.00010790037777042016
+    },
+    {
+      "repeat": 2,
+      "sample_id": 110,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.743936,
+      "ts_probability": 0.0004644494620151818
+    },
+    {
+      "repeat": 2,
+      "sample_id": 111,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.899532,
+      "ts_probability": 0.4447675347328186
+    },
+    {
+      "repeat": 2,
+      "sample_id": 112,
+      "dataset": "ccpe",
+      "latency_ms": 12.434411,
+      "ts_probability": 6.95935750627541e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 113,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.851827,
+      "ts_probability": 0.00010650874173734337
+    },
+    {
+      "repeat": 2,
+      "sample_id": 114,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.229749,
+      "ts_probability": 3.3162425552291097e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 115,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.334522,
+      "ts_probability": 0.010681584477424622
+    },
+    {
+      "repeat": 2,
+      "sample_id": 116,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.160414,
+      "ts_probability": 0.001192491501569748
+    },
+    {
+      "repeat": 2,
+      "sample_id": 117,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.390081,
+      "ts_probability": 0.00035146193113178015
+    },
+    {
+      "repeat": 2,
+      "sample_id": 118,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.975197,
+      "ts_probability": 4.512522355071269e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 119,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.948543,
+      "ts_probability": 0.0018243039958178997
+    },
+    {
+      "repeat": 2,
+      "sample_id": 120,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.441968,
+      "ts_probability": 1.6637151247778093e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 121,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.178097,
+      "ts_probability": 0.0006715605850331485
+    },
+    {
+      "repeat": 2,
+      "sample_id": 122,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.64036,
+      "ts_probability": 0.0003200750215910375
+    },
+    {
+      "repeat": 2,
+      "sample_id": 123,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.252284,
+      "ts_probability": 0.00024282262893393636
+    },
+    {
+      "repeat": 2,
+      "sample_id": 124,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.782987,
+      "ts_probability": 2.34427162126849e-07
+    },
+    {
+      "repeat": 2,
+      "sample_id": 125,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.954692,
+      "ts_probability": 0.008382967673242092
+    },
+    {
+      "repeat": 2,
+      "sample_id": 126,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.593553,
+      "ts_probability": 4.4752625399269164e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 127,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.523153,
+      "ts_probability": 0.0011420297669246793
+    },
+    {
+      "repeat": 2,
+      "sample_id": 128,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.443631,
+      "ts_probability": 0.001115651335567236
+    },
+    {
+      "repeat": 2,
+      "sample_id": 129,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.934312,
+      "ts_probability": 3.306044527562335e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 130,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.668237,
+      "ts_probability": 0.12516610324382782
+    },
+    {
+      "repeat": 2,
+      "sample_id": 131,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.278474,
+      "ts_probability": 0.00011559385166037828
+    },
+    {
+      "repeat": 2,
+      "sample_id": 132,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.043097,
+      "ts_probability": 0.0003738646046258509
+    },
+    {
+      "repeat": 2,
+      "sample_id": 133,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.15365,
+      "ts_probability": 3.0811888791504316e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 134,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.097409,
+      "ts_probability": 6.918659437360475e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 135,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.239721,
+      "ts_probability": 0.2462483048439026
+    },
+    {
+      "repeat": 2,
+      "sample_id": 136,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.667391,
+      "ts_probability": 0.025011077523231506
+    },
+    {
+      "repeat": 2,
+      "sample_id": 137,
+      "dataset": "ccpe",
+      "latency_ms": 12.209195,
+      "ts_probability": 0.00014476141950581223
+    },
+    {
+      "repeat": 2,
+      "sample_id": 138,
+      "dataset": "ccpe",
+      "latency_ms": 12.062829,
+      "ts_probability": 0.0003376767272129655
+    },
+    {
+      "repeat": 2,
+      "sample_id": 139,
+      "dataset": "ccpe",
+      "latency_ms": 11.97144,
+      "ts_probability": 0.00017588245100341737
+    },
+    {
+      "repeat": 2,
+      "sample_id": 140,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.861227,
+      "ts_probability": 0.0004757166316267103
+    },
+    {
+      "repeat": 2,
+      "sample_id": 141,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.701421,
+      "ts_probability": 0.017741531133651733
+    },
+    {
+      "repeat": 2,
+      "sample_id": 142,
+      "dataset": "ccpe",
+      "latency_ms": 12.867163,
+      "ts_probability": 0.00014928686141502112
+    },
+    {
+      "repeat": 2,
+      "sample_id": 143,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.995253,
+      "ts_probability": 0.6654070615768433
+    },
+    {
+      "repeat": 2,
+      "sample_id": 144,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.782583,
+      "ts_probability": 4.248048298904905e-06
+    },
+    {
+      "repeat": 2,
+      "sample_id": 145,
+      "dataset": "ccpe",
+      "latency_ms": 13.504848,
+      "ts_probability": 8.592926315031946e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 146,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.45133,
+      "ts_probability": 8.010358578758314e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 147,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.646129,
+      "ts_probability": 4.792536492459476e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 148,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.263443,
+      "ts_probability": 0.0002990657230839133
+    },
+    {
+      "repeat": 2,
+      "sample_id": 149,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.725411,
+      "ts_probability": 0.0004242699942551553
+    },
+    {
+      "repeat": 2,
+      "sample_id": 150,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.666486,
+      "ts_probability": 0.0006049445946700871
+    },
+    {
+      "repeat": 2,
+      "sample_id": 151,
+      "dataset": "ccpe",
+      "latency_ms": 12.25491,
+      "ts_probability": 4.514553802437149e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 152,
+      "dataset": "ccpe",
+      "latency_ms": 12.549971,
+      "ts_probability": 0.00037574046291410923
+    },
+    {
+      "repeat": 2,
+      "sample_id": 153,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.995216,
+      "ts_probability": 0.0022569941356778145
+    },
+    {
+      "repeat": 2,
+      "sample_id": 154,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.017659,
+      "ts_probability": 0.44492363929748535
+    },
+    {
+      "repeat": 2,
+      "sample_id": 155,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.013901,
+      "ts_probability": 0.00029421583167277277
+    },
+    {
+      "repeat": 2,
+      "sample_id": 156,
+      "dataset": "ccpe",
+      "latency_ms": 11.840237,
+      "ts_probability": 0.00510167283937335
+    },
+    {
+      "repeat": 2,
+      "sample_id": 157,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.340895,
+      "ts_probability": 0.0002752291620709002
+    },
+    {
+      "repeat": 2,
+      "sample_id": 158,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.795402,
+      "ts_probability": 1.7742924683261663e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 159,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.123836,
+      "ts_probability": 1.281157437915681e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 160,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.050791,
+      "ts_probability": 4.510328290052712e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 161,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.047496,
+      "ts_probability": 3.9052105421433225e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 162,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.581263,
+      "ts_probability": 7.733696111245081e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 163,
+      "dataset": "personachat",
+      "latency_ms": 12.689986,
+      "ts_probability": 0.0001459146005799994
+    },
+    {
+      "repeat": 2,
+      "sample_id": 164,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.276593,
+      "ts_probability": 0.32385897636413574
+    },
+    {
+      "repeat": 2,
+      "sample_id": 165,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.22969,
+      "ts_probability": 0.40555447340011597
+    },
+    {
+      "repeat": 2,
+      "sample_id": 166,
+      "dataset": "ccpe",
+      "latency_ms": 12.164712,
+      "ts_probability": 0.0003534363058861345
+    },
+    {
+      "repeat": 2,
+      "sample_id": 167,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.284388,
+      "ts_probability": 0.5311324596405029
+    },
+    {
+      "repeat": 2,
+      "sample_id": 168,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.5703,
+      "ts_probability": 0.0012046097544953227
+    },
+    {
+      "repeat": 2,
+      "sample_id": 169,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.353652,
+      "ts_probability": 0.012737984769046307
+    },
+    {
+      "repeat": 2,
+      "sample_id": 170,
+      "dataset": "ccpe",
+      "latency_ms": 14.965723,
+      "ts_probability": 0.0003304375568404794
+    },
+    {
+      "repeat": 2,
+      "sample_id": 171,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.493864,
+      "ts_probability": 0.5596656799316406
+    },
+    {
+      "repeat": 2,
+      "sample_id": 172,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.547258,
+      "ts_probability": 0.11061345040798187
+    },
+    {
+      "repeat": 2,
+      "sample_id": 173,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.15196,
+      "ts_probability": 0.0006183426594361663
+    },
+    {
+      "repeat": 2,
+      "sample_id": 174,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.163037,
+      "ts_probability": 0.015360635705292225
+    },
+    {
+      "repeat": 2,
+      "sample_id": 175,
+      "dataset": "ccpe",
+      "latency_ms": 12.517826,
+      "ts_probability": 0.00022192823234945536
+    },
+    {
+      "repeat": 2,
+      "sample_id": 176,
+      "dataset": "ccpe",
+      "latency_ms": 12.118414,
+      "ts_probability": 7.841547630960122e-05
+    },
+    {
+      "repeat": 2,
+      "sample_id": 177,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.481379,
+      "ts_probability": 0.00026956619694828987
+    },
+    {
+      "repeat": 2,
+      "sample_id": 178,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.864899,
+      "ts_probability": 0.005142323672771454
+    },
+    {
+      "repeat": 2,
+      "sample_id": 179,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.62978,
+      "ts_probability": 0.1671164482831955
+    },
+    {
+      "repeat": 2,
+      "sample_id": 180,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.112044,
+      "ts_probability": 6.878970566503995e-07
+    },
+    {
+      "repeat": 2,
+      "sample_id": 181,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.172583,
+      "ts_probability": 0.8524234890937805
+    },
+    {
+      "repeat": 2,
+      "sample_id": 182,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.896594,
+      "ts_probability": 0.00015675356553401798
+    },
+    {
+      "repeat": 2,
+      "sample_id": 183,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.921931,
+      "ts_probability": 8.476340735796839e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 0,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.081514,
+      "ts_probability": 8.673759488431187e-09
+    },
+    {
+      "repeat": 3,
+      "sample_id": 1,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.478594,
+      "ts_probability": 0.0019179062219336629
+    },
+    {
+      "repeat": 3,
+      "sample_id": 2,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.576627,
+      "ts_probability": 0.014662561938166618
+    },
+    {
+      "repeat": 3,
+      "sample_id": 3,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.474221,
+      "ts_probability": 1.9549845546862343e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 4,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.857564,
+      "ts_probability": 0.0011547734029591084
+    },
+    {
+      "repeat": 3,
+      "sample_id": 5,
+      "dataset": "daily_dialog",
+      "latency_ms": 10.987114,
+      "ts_probability": 9.226616384694353e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 6,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.672838,
+      "ts_probability": 0.0018448265036568046
+    },
+    {
+      "repeat": 3,
+      "sample_id": 7,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.182298,
+      "ts_probability": 3.3641181507171325e-10
+    },
+    {
+      "repeat": 3,
+      "sample_id": 8,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.812546,
+      "ts_probability": 9.20791644603014e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 9,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.905632,
+      "ts_probability": 1.1358390565874288e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 10,
+      "dataset": "ccpe",
+      "latency_ms": 12.232855,
+      "ts_probability": 0.0004587557341437787
+    },
+    {
+      "repeat": 3,
+      "sample_id": 11,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.45379,
+      "ts_probability": 0.00011119054397568107
+    },
+    {
+      "repeat": 3,
+      "sample_id": 12,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.856092,
+      "ts_probability": 2.136303223210234e-08
+    },
+    {
+      "repeat": 3,
+      "sample_id": 13,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.120024,
+      "ts_probability": 0.0001866165839601308
+    },
+    {
+      "repeat": 3,
+      "sample_id": 14,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.321352,
+      "ts_probability": 0.000992557150311768
+    },
+    {
+      "repeat": 3,
+      "sample_id": 15,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.325648,
+      "ts_probability": 0.2821151316165924
+    },
+    {
+      "repeat": 3,
+      "sample_id": 16,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.339362,
+      "ts_probability": 2.4771530604539294e-08
+    },
+    {
+      "repeat": 3,
+      "sample_id": 17,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.0336,
+      "ts_probability": 7.042873039608821e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 18,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.173967,
+      "ts_probability": 0.12860345840454102
+    },
+    {
+      "repeat": 3,
+      "sample_id": 19,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.4315,
+      "ts_probability": 0.0001000162010313943
+    },
+    {
+      "repeat": 3,
+      "sample_id": 20,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.552569,
+      "ts_probability": 0.1549302339553833
+    },
+    {
+      "repeat": 3,
+      "sample_id": 21,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.690557,
+      "ts_probability": 5.247182244261239e-09
+    },
+    {
+      "repeat": 3,
+      "sample_id": 22,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.049977,
+      "ts_probability": 0.4010712504386902
+    },
+    {
+      "repeat": 3,
+      "sample_id": 23,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.161487,
+      "ts_probability": 0.5105084776878357
+    },
+    {
+      "repeat": 3,
+      "sample_id": 24,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.262926,
+      "ts_probability": 5.298332325764932e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 25,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.50096,
+      "ts_probability": 0.07474493980407715
+    },
+    {
+      "repeat": 3,
+      "sample_id": 26,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.040225,
+      "ts_probability": 0.0011808420531451702
+    },
+    {
+      "repeat": 3,
+      "sample_id": 27,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.107915,
+      "ts_probability": 0.0008436618954874575
+    },
+    {
+      "repeat": 3,
+      "sample_id": 28,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.403339,
+      "ts_probability": 0.27759677171707153
+    },
+    {
+      "repeat": 3,
+      "sample_id": 29,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.163646,
+      "ts_probability": 0.0005575381219387054
+    },
+    {
+      "repeat": 3,
+      "sample_id": 30,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.930063,
+      "ts_probability": 0.0010842321207746863
+    },
+    {
+      "repeat": 3,
+      "sample_id": 31,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.052806,
+      "ts_probability": 0.006889291573315859
+    },
+    {
+      "repeat": 3,
+      "sample_id": 32,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.391502,
+      "ts_probability": 0.14416123926639557
+    },
+    {
+      "repeat": 3,
+      "sample_id": 33,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.924988,
+      "ts_probability": 0.0039427559822797775
+    },
+    {
+      "repeat": 3,
+      "sample_id": 34,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.352878,
+      "ts_probability": 0.0010947531554847956
+    },
+    {
+      "repeat": 3,
+      "sample_id": 35,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.319165,
+      "ts_probability": 9.46522231970448e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 36,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.501872,
+      "ts_probability": 2.558267988206353e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 37,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.798369,
+      "ts_probability": 8.319785411003977e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 38,
+      "dataset": "ccpe",
+      "latency_ms": 11.47133,
+      "ts_probability": 0.0045170565135777
+    },
+    {
+      "repeat": 3,
+      "sample_id": 39,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.272236,
+      "ts_probability": 0.0007226414745673537
+    },
+    {
+      "repeat": 3,
+      "sample_id": 40,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.953924,
+      "ts_probability": 0.00018023858137894422
+    },
+    {
+      "repeat": 3,
+      "sample_id": 41,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.070559,
+      "ts_probability": 0.0003512113180477172
+    },
+    {
+      "repeat": 3,
+      "sample_id": 42,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.025426,
+      "ts_probability": 0.00042692365241236985
+    },
+    {
+      "repeat": 3,
+      "sample_id": 43,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.399567,
+      "ts_probability": 0.44578924775123596
+    },
+    {
+      "repeat": 3,
+      "sample_id": 44,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.64442,
+      "ts_probability": 3.0130770028335974e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 45,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.528251,
+      "ts_probability": 0.0002722053322941065
+    },
+    {
+      "repeat": 3,
+      "sample_id": 46,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.644509,
+      "ts_probability": 2.9879247449571267e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 47,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.357602,
+      "ts_probability": 0.000125447942991741
+    },
+    {
+      "repeat": 3,
+      "sample_id": 48,
+      "dataset": "ccpe",
+      "latency_ms": 12.012302,
+      "ts_probability": 9.174676961265504e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 49,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.079275,
+      "ts_probability": 0.5970635414123535
+    },
+    {
+      "repeat": 3,
+      "sample_id": 50,
+      "dataset": "personachat",
+      "latency_ms": 11.981806,
+      "ts_probability": 0.028431519865989685
+    },
+    {
+      "repeat": 3,
+      "sample_id": 51,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.504751,
+      "ts_probability": 8.784172678133473e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 52,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.372829,
+      "ts_probability": 3.421786823309958e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 53,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.682794,
+      "ts_probability": 0.14550822973251343
+    },
+    {
+      "repeat": 3,
+      "sample_id": 54,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.179215,
+      "ts_probability": 7.801825745445967e-07
+    },
+    {
+      "repeat": 3,
+      "sample_id": 55,
+      "dataset": "taskmaster1",
+      "latency_ms": 10.973548,
+      "ts_probability": 1.7465814380557276e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 56,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.157855,
+      "ts_probability": 5.767180482507683e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 57,
+      "dataset": "multiwoz21",
+      "latency_ms": 14.409531,
+      "ts_probability": 0.004858838394284248
+    },
+    {
+      "repeat": 3,
+      "sample_id": 58,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.325557,
+      "ts_probability": 0.16399888694286346
+    },
+    {
+      "repeat": 3,
+      "sample_id": 59,
+      "dataset": "ccpe",
+      "latency_ms": 13.371853,
+      "ts_probability": 0.6748192310333252
+    },
+    {
+      "repeat": 3,
+      "sample_id": 60,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.663012,
+      "ts_probability": 5.1925049774581566e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 61,
+      "dataset": "ccpe",
+      "latency_ms": 13.506028,
+      "ts_probability": 0.017475072294473648
+    },
+    {
+      "repeat": 3,
+      "sample_id": 62,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.986727,
+      "ts_probability": 4.778696165885776e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 63,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.449821,
+      "ts_probability": 1.1036666364816483e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 64,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.320691,
+      "ts_probability": 0.6881327033042908
+    },
+    {
+      "repeat": 3,
+      "sample_id": 65,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.119273,
+      "ts_probability": 0.00019292016804683954
+    },
+    {
+      "repeat": 3,
+      "sample_id": 66,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.034096,
+      "ts_probability": 0.29041773080825806
+    },
+    {
+      "repeat": 3,
+      "sample_id": 67,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.572278,
+      "ts_probability": 1.537645601956683e-07
+    },
+    {
+      "repeat": 3,
+      "sample_id": 68,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.506949,
+      "ts_probability": 7.903019286459312e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 69,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.298003,
+      "ts_probability": 0.1372864842414856
+    },
+    {
+      "repeat": 3,
+      "sample_id": 70,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.29734,
+      "ts_probability": 0.0004424240323714912
+    },
+    {
+      "repeat": 3,
+      "sample_id": 71,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.383837,
+      "ts_probability": 0.0007614569622091949
+    },
+    {
+      "repeat": 3,
+      "sample_id": 72,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.98386,
+      "ts_probability": 0.0004653965588659048
+    },
+    {
+      "repeat": 3,
+      "sample_id": 73,
+      "dataset": "ccpe",
+      "latency_ms": 12.73913,
+      "ts_probability": 0.017822081223130226
+    },
+    {
+      "repeat": 3,
+      "sample_id": 74,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.319812,
+      "ts_probability": 2.1869288957532262e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 75,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.984322,
+      "ts_probability": 3.403597190754226e-07
+    },
+    {
+      "repeat": 3,
+      "sample_id": 76,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.292492,
+      "ts_probability": 0.6100403070449829
+    },
+    {
+      "repeat": 3,
+      "sample_id": 77,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.168374,
+      "ts_probability": 2.5556525997671997e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 78,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.710167,
+      "ts_probability": 0.0007955881883390248
+    },
+    {
+      "repeat": 3,
+      "sample_id": 79,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.615307,
+      "ts_probability": 4.953255483997054e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 80,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.936062,
+      "ts_probability": 1.3572120224125683e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 81,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.683071,
+      "ts_probability": 0.00031331958598457277
+    },
+    {
+      "repeat": 3,
+      "sample_id": 82,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.25244,
+      "ts_probability": 0.00043066448415629566
+    },
+    {
+      "repeat": 3,
+      "sample_id": 83,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.464936,
+      "ts_probability": 0.00036153150722384453
+    },
+    {
+      "repeat": 3,
+      "sample_id": 84,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.951857,
+      "ts_probability": 9.905873412208166e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 85,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.338777,
+      "ts_probability": 2.8247625323274406e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 86,
+      "dataset": "ccpe",
+      "latency_ms": 11.968463,
+      "ts_probability": 3.4985837373824324e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 87,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.733291,
+      "ts_probability": 0.7013221979141235
+    },
+    {
+      "repeat": 3,
+      "sample_id": 88,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.038524,
+      "ts_probability": 4.597620136337355e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 89,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.087764,
+      "ts_probability": 0.0018293214961886406
+    },
+    {
+      "repeat": 3,
+      "sample_id": 90,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.659496,
+      "ts_probability": 0.0001881304633570835
+    },
+    {
+      "repeat": 3,
+      "sample_id": 91,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.383247,
+      "ts_probability": 0.002070328453555703
+    },
+    {
+      "repeat": 3,
+      "sample_id": 92,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.55594,
+      "ts_probability": 0.00025999691570177674
+    },
+    {
+      "repeat": 3,
+      "sample_id": 93,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.721538,
+      "ts_probability": 0.00010662378190318123
+    },
+    {
+      "repeat": 3,
+      "sample_id": 94,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.270907,
+      "ts_probability": 3.3553220418980345e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 95,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.949694,
+      "ts_probability": 0.5890234708786011
+    },
+    {
+      "repeat": 3,
+      "sample_id": 96,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.499755,
+      "ts_probability": 0.4258824288845062
+    },
+    {
+      "repeat": 3,
+      "sample_id": 97,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.617874,
+      "ts_probability": 0.0008805334218777716
+    },
+    {
+      "repeat": 3,
+      "sample_id": 98,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.471979,
+      "ts_probability": 1.196944054981941e-07
+    },
+    {
+      "repeat": 3,
+      "sample_id": 99,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.561576,
+      "ts_probability": 0.009513398632407188
+    },
+    {
+      "repeat": 3,
+      "sample_id": 100,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.885618,
+      "ts_probability": 5.617681745206937e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 101,
+      "dataset": "ccpe",
+      "latency_ms": 12.817629,
+      "ts_probability": 0.0003825013991445303
+    },
+    {
+      "repeat": 3,
+      "sample_id": 102,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.049464,
+      "ts_probability": 0.0014271901454776525
+    },
+    {
+      "repeat": 3,
+      "sample_id": 103,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.734617,
+      "ts_probability": 0.010861367918550968
+    },
+    {
+      "repeat": 3,
+      "sample_id": 104,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.776056,
+      "ts_probability": 0.0013569053262472153
+    },
+    {
+      "repeat": 3,
+      "sample_id": 105,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.721621,
+      "ts_probability": 0.002822192618623376
+    },
+    {
+      "repeat": 3,
+      "sample_id": 106,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.225941,
+      "ts_probability": 1.003802208288107e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 107,
+      "dataset": "metawoz",
+      "latency_ms": 12.924196,
+      "ts_probability": 0.0006159613258205354
+    },
+    {
+      "repeat": 3,
+      "sample_id": 108,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.523292,
+      "ts_probability": 0.00269553461112082
+    },
+    {
+      "repeat": 3,
+      "sample_id": 109,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.075684,
+      "ts_probability": 0.00010790037777042016
+    },
+    {
+      "repeat": 3,
+      "sample_id": 110,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.171379,
+      "ts_probability": 0.0004644494620151818
+    },
+    {
+      "repeat": 3,
+      "sample_id": 111,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.51759,
+      "ts_probability": 0.4447675347328186
+    },
+    {
+      "repeat": 3,
+      "sample_id": 112,
+      "dataset": "ccpe",
+      "latency_ms": 11.932682,
+      "ts_probability": 6.95935750627541e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 113,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.857068,
+      "ts_probability": 0.00010650874173734337
+    },
+    {
+      "repeat": 3,
+      "sample_id": 114,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.561642,
+      "ts_probability": 3.3162425552291097e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 115,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.230323,
+      "ts_probability": 0.010681584477424622
+    },
+    {
+      "repeat": 3,
+      "sample_id": 116,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.669579,
+      "ts_probability": 0.001192491501569748
+    },
+    {
+      "repeat": 3,
+      "sample_id": 117,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.744236,
+      "ts_probability": 0.00035146193113178015
+    },
+    {
+      "repeat": 3,
+      "sample_id": 118,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.242842,
+      "ts_probability": 4.512522355071269e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 119,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.933763,
+      "ts_probability": 0.0018243039958178997
+    },
+    {
+      "repeat": 3,
+      "sample_id": 120,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.169745,
+      "ts_probability": 1.6637151247778093e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 121,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.417349,
+      "ts_probability": 0.0006715605850331485
+    },
+    {
+      "repeat": 3,
+      "sample_id": 122,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.749027,
+      "ts_probability": 0.0003200750215910375
+    },
+    {
+      "repeat": 3,
+      "sample_id": 123,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.34194,
+      "ts_probability": 0.00024282262893393636
+    },
+    {
+      "repeat": 3,
+      "sample_id": 124,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.305572,
+      "ts_probability": 2.34427162126849e-07
+    },
+    {
+      "repeat": 3,
+      "sample_id": 125,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.635629,
+      "ts_probability": 0.008382967673242092
+    },
+    {
+      "repeat": 3,
+      "sample_id": 126,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.574746,
+      "ts_probability": 4.4752625399269164e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 127,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.06543,
+      "ts_probability": 0.0011420297669246793
+    },
+    {
+      "repeat": 3,
+      "sample_id": 128,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.696786,
+      "ts_probability": 0.001115651335567236
+    },
+    {
+      "repeat": 3,
+      "sample_id": 129,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.02999,
+      "ts_probability": 3.306044527562335e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 130,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.574021,
+      "ts_probability": 0.12516610324382782
+    },
+    {
+      "repeat": 3,
+      "sample_id": 131,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.771676,
+      "ts_probability": 0.00011559385166037828
+    },
+    {
+      "repeat": 3,
+      "sample_id": 132,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.276535,
+      "ts_probability": 0.0003738646046258509
+    },
+    {
+      "repeat": 3,
+      "sample_id": 133,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.772247,
+      "ts_probability": 3.0811888791504316e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 134,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.206056,
+      "ts_probability": 6.918659437360475e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 135,
+      "dataset": "multiwoz21",
+      "latency_ms": 11.750938,
+      "ts_probability": 0.2462483048439026
+    },
+    {
+      "repeat": 3,
+      "sample_id": 136,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.17613,
+      "ts_probability": 0.025011077523231506
+    },
+    {
+      "repeat": 3,
+      "sample_id": 137,
+      "dataset": "ccpe",
+      "latency_ms": 11.990984,
+      "ts_probability": 0.00014476141950581223
+    },
+    {
+      "repeat": 3,
+      "sample_id": 138,
+      "dataset": "ccpe",
+      "latency_ms": 11.913791,
+      "ts_probability": 0.0003376767272129655
+    },
+    {
+      "repeat": 3,
+      "sample_id": 139,
+      "dataset": "ccpe",
+      "latency_ms": 12.028608,
+      "ts_probability": 0.00017588245100341737
+    },
+    {
+      "repeat": 3,
+      "sample_id": 140,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.292923,
+      "ts_probability": 0.0004757166316267103
+    },
+    {
+      "repeat": 3,
+      "sample_id": 141,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.020374,
+      "ts_probability": 0.017741531133651733
+    },
+    {
+      "repeat": 3,
+      "sample_id": 142,
+      "dataset": "ccpe",
+      "latency_ms": 13.182318,
+      "ts_probability": 0.00014928686141502112
+    },
+    {
+      "repeat": 3,
+      "sample_id": 143,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.490934,
+      "ts_probability": 0.6654070615768433
+    },
+    {
+      "repeat": 3,
+      "sample_id": 144,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.01557,
+      "ts_probability": 4.248048298904905e-06
+    },
+    {
+      "repeat": 3,
+      "sample_id": 145,
+      "dataset": "ccpe",
+      "latency_ms": 13.107164,
+      "ts_probability": 8.592926315031946e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 146,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.485114,
+      "ts_probability": 8.010358578758314e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 147,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.715426,
+      "ts_probability": 4.792536492459476e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 148,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.749333,
+      "ts_probability": 0.0002990657230839133
+    },
+    {
+      "repeat": 3,
+      "sample_id": 149,
+      "dataset": "taskmaster3",
+      "latency_ms": 13.172235,
+      "ts_probability": 0.0004242699942551553
+    },
+    {
+      "repeat": 3,
+      "sample_id": 150,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.816646,
+      "ts_probability": 0.0006049445946700871
+    },
+    {
+      "repeat": 3,
+      "sample_id": 151,
+      "dataset": "ccpe",
+      "latency_ms": 11.89362,
+      "ts_probability": 4.514553802437149e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 152,
+      "dataset": "ccpe",
+      "latency_ms": 12.55383,
+      "ts_probability": 0.00037574046291410923
+    },
+    {
+      "repeat": 3,
+      "sample_id": 153,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.055869,
+      "ts_probability": 0.0022569941356778145
+    },
+    {
+      "repeat": 3,
+      "sample_id": 154,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.64437,
+      "ts_probability": 0.44492363929748535
+    },
+    {
+      "repeat": 3,
+      "sample_id": 155,
+      "dataset": "taskmaster1",
+      "latency_ms": 13.208402,
+      "ts_probability": 0.00029421583167277277
+    },
+    {
+      "repeat": 3,
+      "sample_id": 156,
+      "dataset": "ccpe",
+      "latency_ms": 12.143575,
+      "ts_probability": 0.00510167283937335
+    },
+    {
+      "repeat": 3,
+      "sample_id": 157,
+      "dataset": "multiwoz21",
+      "latency_ms": 13.137993,
+      "ts_probability": 0.0002752291620709002
+    },
+    {
+      "repeat": 3,
+      "sample_id": 158,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.083867,
+      "ts_probability": 1.7742924683261663e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 159,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.748507,
+      "ts_probability": 1.281157437915681e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 160,
+      "dataset": "taskmaster3",
+      "latency_ms": 11.184446,
+      "ts_probability": 4.510328290052712e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 161,
+      "dataset": "daily_dialog",
+      "latency_ms": 11.662454,
+      "ts_probability": 3.9052105421433225e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 162,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.546297,
+      "ts_probability": 7.733696111245081e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 163,
+      "dataset": "personachat",
+      "latency_ms": 11.588403,
+      "ts_probability": 0.0001459146005799994
+    },
+    {
+      "repeat": 3,
+      "sample_id": 164,
+      "dataset": "taskmaster2",
+      "latency_ms": 10.93162,
+      "ts_probability": 0.32385897636413574
+    },
+    {
+      "repeat": 3,
+      "sample_id": 165,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.233526,
+      "ts_probability": 0.40555447340011597
+    },
+    {
+      "repeat": 3,
+      "sample_id": 166,
+      "dataset": "ccpe",
+      "latency_ms": 12.241172,
+      "ts_probability": 0.0003534363058861345
+    },
+    {
+      "repeat": 3,
+      "sample_id": 167,
+      "dataset": "daily_dialog",
+      "latency_ms": 12.082491,
+      "ts_probability": 0.5311324596405029
+    },
+    {
+      "repeat": 3,
+      "sample_id": 168,
+      "dataset": "taskmaster2",
+      "latency_ms": 11.994342,
+      "ts_probability": 0.0012046097544953227
+    },
+    {
+      "repeat": 3,
+      "sample_id": 169,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.625259,
+      "ts_probability": 0.012737984769046307
+    },
+    {
+      "repeat": 3,
+      "sample_id": 170,
+      "dataset": "ccpe",
+      "latency_ms": 11.733919,
+      "ts_probability": 0.0003304375568404794
+    },
+    {
+      "repeat": 3,
+      "sample_id": 171,
+      "dataset": "taskmaster1",
+      "latency_ms": 11.858785,
+      "ts_probability": 0.5596656799316406
+    },
+    {
+      "repeat": 3,
+      "sample_id": 172,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.475469,
+      "ts_probability": 0.11061345040798187
+    },
+    {
+      "repeat": 3,
+      "sample_id": 173,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.700152,
+      "ts_probability": 0.0006183426594361663
+    },
+    {
+      "repeat": 3,
+      "sample_id": 174,
+      "dataset": "taskmaster2",
+      "latency_ms": 13.346952,
+      "ts_probability": 0.015360635705292225
+    },
+    {
+      "repeat": 3,
+      "sample_id": 175,
+      "dataset": "ccpe",
+      "latency_ms": 12.806143,
+      "ts_probability": 0.00022192823234945536
+    },
+    {
+      "repeat": 3,
+      "sample_id": 176,
+      "dataset": "ccpe",
+      "latency_ms": 12.535974,
+      "ts_probability": 7.841547630960122e-05
+    },
+    {
+      "repeat": 3,
+      "sample_id": 177,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.751365,
+      "ts_probability": 0.00026956619694828987
+    },
+    {
+      "repeat": 3,
+      "sample_id": 178,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.511942,
+      "ts_probability": 0.005142323672771454
+    },
+    {
+      "repeat": 3,
+      "sample_id": 179,
+      "dataset": "taskmaster3",
+      "latency_ms": 12.668792,
+      "ts_probability": 0.1671164482831955
+    },
+    {
+      "repeat": 3,
+      "sample_id": 180,
+      "dataset": "multiwoz21",
+      "latency_ms": 12.725838,
+      "ts_probability": 6.878970566503995e-07
+    },
+    {
+      "repeat": 3,
+      "sample_id": 181,
+      "dataset": "taskmaster2",
+      "latency_ms": 12.893016,
+      "ts_probability": 0.8524234890937805
+    },
+    {
+      "repeat": 3,
+      "sample_id": 182,
+      "dataset": "daily_dialog",
+      "latency_ms": 13.535308,
+      "ts_probability": 0.00015675356553401798
+    },
+    {
+      "repeat": 3,
+      "sample_id": 183,
+      "dataset": "taskmaster1",
+      "latency_ms": 12.843608,
+      "ts_probability": 8.476340735796839e-05
+    }
+  ]
+}

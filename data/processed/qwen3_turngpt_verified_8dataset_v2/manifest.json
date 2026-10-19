@@ -1,0 +1,187 @@
+{
+  "status": "ok",
+  "scope": "three_corpus_written_subset",
+  "dataset_scope": "merged_verified_turngpt",
+  "datasets": [
+    "daily_dialog",
+    "personachat",
+    "multiwoz21",
+    "ccpe",
+    "taskmaster1",
+    "taskmaster2",
+    "taskmaster3",
+    "metawoz"
+  ],
+  "sources": {
+    "daily_dialog": "data/processed/qwen3_turngpt_3corpus_v1",
+    "personachat": "data/processed/qwen3_turngpt_3corpus_v1",
+    "multiwoz21": "data/processed/qwen3_turngpt_3corpus_v1",
+    "ccpe": "data/processed/ccpe_turngpt_v1",
+    "taskmaster1": "data/processed/taskmaster1_turngpt_v1",
+    "taskmaster2": "data/processed/taskmaster2_3_turngpt_v1",
+    "taskmaster3": "data/processed/taskmaster2_3_turngpt_v1",
+    "metawoz": "data/processed/metawoz_turngpt_v2"
+  },
+  "splits": {
+    "train": {
+      "daily_dialog": {
+        "windows": 7531,
+        "tokens": 1002202,
+        "ts_tokens": 70415
+      },
+      "personachat": {
+        "windows": 8956,
+        "tokens": 1504275,
+        "ts_tokens": 131379
+      },
+      "multiwoz21": {
+        "windows": 10052,
+        "tokens": 1876272,
+        "ts_tokens": 109504
+      },
+      "ccpe": {
+        "windows": 752,
+        "tokens": 160970,
+        "ts_tokens": 9694
+      },
+      "taskmaster1": {
+        "windows": 7156,
+        "tokens": 1452852,
+        "ts_tokens": 132809
+      },
+      "taskmaster2": {
+        "windows": 6998,
+        "tokens": 1272521,
+        "ts_tokens": 108893
+      },
+      "taskmaster3": {
+        "windows": 28044,
+        "tokens": 5749432,
+        "ts_tokens": 414155
+      },
+      "metawoz": {
+        "windows": 32075,
+        "tokens": 3408190,
+        "ts_tokens": 365515
+      }
+    },
+    "validation": {
+      "daily_dialog": {
+        "windows": 721,
+        "tokens": 93972,
+        "ts_tokens": 6725
+      },
+      "personachat": {
+        "windows": 1000,
+        "tokens": 182034,
+        "ts_tokens": 15593
+      },
+      "multiwoz21": {
+        "windows": 1253,
+        "tokens": 250426,
+        "ts_tokens": 14214
+      },
+      "ccpe": {
+        "windows": 26,
+        "tokens": 5391,
+        "ts_tokens": 374
+      },
+      "taskmaster1": {
+        "windows": 886,
+        "tokens": 180749,
+        "ts_tokens": 16519
+      },
+      "taskmaster2": {
+        "windows": 389,
+        "tokens": 68414,
+        "ts_tokens": 5858
+      },
+      "taskmaster3": {
+        "windows": 1547,
+        "tokens": 319770,
+        "ts_tokens": 22901
+      },
+      "metawoz": {
+        "windows": 3555,
+        "tokens": 376235,
+        "ts_tokens": 40501
+      }
+    },
+    "test": {
+      "daily_dialog": {
+        "windows": 679,
+        "tokens": 90401,
+        "ts_tokens": 6274
+      },
+      "personachat": {
+        "windows": 969,
+        "tokens": 173455,
+        "ts_tokens": 15023
+      },
+      "multiwoz21": {
+        "windows": 1234,
+        "tokens": 249309,
+        "ts_tokens": 14179
+      },
+      "ccpe": {
+        "windows": 39,
+        "tokens": 8203,
+        "ts_tokens": 400
+      },
+      "taskmaster1": {
+        "windows": 883,
+        "tokens": 180559,
+        "ts_tokens": 16475
+      },
+      "taskmaster2": {
+        "windows": 378,
+        "tokens": 68323,
+        "ts_tokens": 5979
+      },
+      "taskmaster3": {
+        "windows": 1586,
+        "tokens": 325293,
+        "ts_tokens": 23091
+      },
+      "metawoz": {
+        "windows": 2200,
+        "tokens": 244275,
+        "ts_tokens": 24883
+      }
+    }
+  },
+  "totals": {
+    "train": {
+      "path": "train.jsonl",
+      "sha256": "9ef2161b0e4e9e35a4120f7a5b1b8c14649893560e205dfcd592b18b198fbb2d",
+      "windows": 101564,
+      "tokens": 16426714,
+      "ts_tokens": 1342364
+    },
+    "validation": {
+      "path": "validation.jsonl",
+      "sha256": "553807dc68b70b9ac6579f1fc6f2f251bcddcc1385129572e38cac96ea096f0c",
+      "windows": 9377,
+      "tokens": 1476991,
+      "ts_tokens": 122685
+    },
+    "test": {
+      "path": "test.jsonl",
+      "sha256": "c3224ddf47e9b95e1159ea20ee6a66d68d760c61752e66ad69401229f6e8cc15",
+      "windows": 7968,
+      "tokens": 1339818,
+      "ts_tokens": 106304
+    }
+  },
+  "settings": {
+    "max_length": 256,
+    "keep_length": 64,
+    "overlap_length": 10,
+    "limit_dialogues_per_split": null
+  },
+  "special_token_ids": {
+    "ts": 151669,
+    "speaker1": 151670,
+    "speaker2": 151671
+  }
+}
